@@ -5,6 +5,33 @@
 
 <hibernate-configuration>
     <session-factory>
-
+        <mapping resource="com/Aishopssh/Entites/TbAdmin.hbm.xml"/>
+        <mapping class="com.Aishopssh.Entites.TbAdmin"/>
+        <mapping class="com.Aishopssh.Entites.TbAdminReply"/>
+        <mapping resource="com/Aishopssh/Entites/TbAdminReply.hbm.xml"/>
+        <mapping class="com.Aishopssh.Entites.TbAdvertisements"/>
+        <mapping resource="com/Aishopssh/Entites/TbAdvertisements.hbm.xml"/>
+        <mapping class="com.Aishopssh.Entites.TbCartlist"/>
+        <mapping resource="com/Aishopssh/Entites/TbCartlist.hbm.xml"/>
+        <mapping class="com.Aishopssh.Entites.TbComments"/>
+        <mapping resource="com/Aishopssh/Entites/TbComments.hbm.xml"/>
+        <mapping class="com.Aishopssh.Entites.TbGoods"/>
+        <mapping resource="com/Aishopssh/Entites/TbGoods.hbm.xml"/>
+        <mapping class="com.Aishopssh.Entites.TbLeaveword"/>
+        <mapping resource="com/Aishopssh/Entites/TbLeaveword.hbm.xml"/>
+        <mapping resource="com/Aishopssh/Entites/TbNotice.hbm.xml"/>
+        <mapping class="com.Aishopssh.Entites.TbNotice"/>
+        <mapping class="com.Aishopssh.Entites.TbOrders"/>
+        <mapping resource="com/Aishopssh/Entites/TbOrders.hbm.xml"/>
+        <mapping class="com.Aishopssh.Entites.TbPwdRest"/>
+        <mapping resource="com/Aishopssh/Entites/TbPwdRest.hbm.xml"/>
+        <mapping resource="com/Aishopssh/Entites/TbType1.hbm.xml"/>
+        <mapping class="com.Aishopssh.Entites.TbType1"/>
+        <mapping resource="com/Aishopssh/Entites/TbType2.hbm.xml"/>
+        <mapping class="com.Aishopssh.Entites.TbType2"/>
+        <mapping class="com.Aishopssh.Entites.TbType3"/>
+        <mapping resource="com/Aishopssh/Entites/TbType3.hbm.xml"/>
+        <mapping class="com.Aishopssh.Entites.TbUser"/>
+        <mapping resource="com/Aishopssh/Entites/TbUser.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

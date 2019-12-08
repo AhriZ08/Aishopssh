@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.Aishopssh.Entites.TbOrders" table="tb_orders" schema="e_shopwebsite">
+        <id name="id" column="ID"/>
+        <property name="num" column="Num"/>
+        <property name="consigneeName" column="Consignee_Name"/>
+        <property name="consigneeSex" column="Consignee_Sex"/>
+        <property name="consigneeAddr" column="Consignee_Addr"/>
+        <property name="postcode" column="Postcode"/>
+        <property name="tel" column="Tel"/>
+        <property name="consigneeRecTime" column="Consignee_RecTime"/>
+        <property name="paymentType" column="Payment_Type"/>
+        <property name="purchaserLeaveWord" column="Purchaser_LeaveWord"/>
+        <property name="purchaseTime" column="PurchaseTime"/>
+        <property name="purchaserName" column="PurchaserName"/>
+        <property name="status" column="Status"/>
+        <property name="amount" column="Amount"/>
+    </class>
+</hibernate-mapping>
