@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.Aishopssh.Entites.TbAdvertisements" table="tb_advertisements" schema="e_shopwebsite">
+    <class name="com.Aishopssh.Entites.Advertisements" table="tb_advertisements" schema="e_shopwebsite">
         <id name="id" column="ID"/>
         <property name="path" column="Path"/>
         <property name="url" column="URL"/>

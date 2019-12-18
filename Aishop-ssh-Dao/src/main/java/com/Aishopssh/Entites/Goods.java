@@ -5,7 +5,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "tb_goods", schema = "e_shopwebsite")
-public class TbGoods {
+public class Goods {
     private int id;
     private String name;
     private String introduction;
@@ -199,28 +199,28 @@ public class TbGoods {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TbGoods tbGoods = (TbGoods) o;
+        Goods goods = (Goods) o;
 
-        if (id != tbGoods.id) return false;
-        if (num != tbGoods.num) return false;
-        if (purchaseTime != tbGoods.purchaseTime) return false;
-        if (isRecommend != tbGoods.isRecommend) return false;
-        if (typeIdLevel1 != tbGoods.typeIdLevel1) return false;
-        if (!Objects.equals(name, tbGoods.name)) return false;
-        if (!Objects.equals(introduction, tbGoods.introduction))
+        if (id != goods.id) return false;
+        if (num != goods.num) return false;
+        if (purchaseTime != goods.purchaseTime) return false;
+        if (isRecommend != goods.isRecommend) return false;
+        if (typeIdLevel1 != goods.typeIdLevel1) return false;
+        if (!Objects.equals(name, goods.name)) return false;
+        if (!Objects.equals(introduction, goods.introduction))
             return false;
-        if (!Objects.equals(addtime, tbGoods.addtime)) return false;
-        if (!Objects.equals(level, tbGoods.level)) return false;
-        if (!Objects.equals(model, tbGoods.model)) return false;
-        if (!Objects.equals(picture, tbGoods.picture)) return false;
-        if (!Objects.equals(typeIdLevel2, tbGoods.typeIdLevel2))
+        if (!Objects.equals(addtime, goods.addtime)) return false;
+        if (!Objects.equals(level, goods.level)) return false;
+        if (!Objects.equals(model, goods.model)) return false;
+        if (!Objects.equals(picture, goods.picture)) return false;
+        if (!Objects.equals(typeIdLevel2, goods.typeIdLevel2))
             return false;
-        if (!Objects.equals(typeIdLevel3, tbGoods.typeIdLevel3))
+        if (!Objects.equals(typeIdLevel3, goods.typeIdLevel3))
             return false;
-        if (!Objects.equals(memberPrice, tbGoods.memberPrice)) return false;
-        if (!Objects.equals(marketPirce, tbGoods.marketPirce)) return false;
-        if (!Objects.equals(brand, tbGoods.brand)) return false;
-        return Objects.equals(isSpecialPrice, tbGoods.isSpecialPrice);
+        if (!Objects.equals(memberPrice, goods.memberPrice)) return false;
+        if (!Objects.equals(marketPirce, goods.marketPirce)) return false;
+        if (!Objects.equals(brand, goods.brand)) return false;
+        return Objects.equals(isSpecialPrice, goods.isSpecialPrice);
     }
 
     @Override

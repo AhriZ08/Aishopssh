@@ -4,10 +4,8 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.Aishopssh.Entites.TbCartlist" table="tb_cartlist" schema="e_shopwebsite">
+    <class name="com.Aishopssh.Entites.Type3" table="tb_type_3" schema="e_shopwebsite">
         <id name="id" column="ID"/>
-        <property name="goodsNum" column="GoodsNum"/>
-        <property name="goodsAddTime" column="GoodsAddTime"/>
-        <property name="orderNum" column="OrderNum"/>
+        <property name="typeName" column="TypeName"/>
     </class>
 </hibernate-mapping>

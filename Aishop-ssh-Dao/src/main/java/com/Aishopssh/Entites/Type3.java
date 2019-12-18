@@ -4,8 +4,8 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tb_type_1", schema = "e_shopwebsite")
-public class TbType1 {
+@Table(name = "tb_type_3", schema = "e_shopwebsite")
+public class Type3 {
     private int id;
     private String typeName;
 
@@ -34,10 +34,10 @@ public class TbType1 {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TbType1 tbType1 = (TbType1) o;
+        Type3 type3 = (Type3) o;
 
-        if (id != tbType1.id) return false;
-        return Objects.equals(typeName, tbType1.typeName);
+        if (id != type3.id) return false;
+        return Objects.equals(typeName, type3.typeName);
     }
 
     @Override

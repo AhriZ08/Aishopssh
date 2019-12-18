@@ -5,7 +5,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "tb_orders", schema = "e_shopwebsite")
-public class TbOrders {
+public class Orders {
     private int id;
     private String num;
     private String consigneeName;
@@ -166,30 +166,30 @@ public class TbOrders {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TbOrders tbOrders = (TbOrders) o;
+        Orders orders = (Orders) o;
 
-        if (id != tbOrders.id) return false;
-        if (!Objects.equals(num, tbOrders.num)) return false;
-        if (!Objects.equals(consigneeName, tbOrders.consigneeName))
+        if (id != orders.id) return false;
+        if (!Objects.equals(num, orders.num)) return false;
+        if (!Objects.equals(consigneeName, orders.consigneeName))
             return false;
-        if (!Objects.equals(consigneeSex, tbOrders.consigneeSex))
+        if (!Objects.equals(consigneeSex, orders.consigneeSex))
             return false;
-        if (!Objects.equals(consigneeAddr, tbOrders.consigneeAddr))
+        if (!Objects.equals(consigneeAddr, orders.consigneeAddr))
             return false;
-        if (!Objects.equals(postcode, tbOrders.postcode)) return false;
-        if (!Objects.equals(tel, tbOrders.tel)) return false;
-        if (!Objects.equals(consigneeRecTime, tbOrders.consigneeRecTime))
+        if (!Objects.equals(postcode, orders.postcode)) return false;
+        if (!Objects.equals(tel, orders.tel)) return false;
+        if (!Objects.equals(consigneeRecTime, orders.consigneeRecTime))
             return false;
-        if (!Objects.equals(paymentType, tbOrders.paymentType))
+        if (!Objects.equals(paymentType, orders.paymentType))
             return false;
-        if (!Objects.equals(purchaserLeaveWord, tbOrders.purchaserLeaveWord))
+        if (!Objects.equals(purchaserLeaveWord, orders.purchaserLeaveWord))
             return false;
-        if (!Objects.equals(purchaseTime, tbOrders.purchaseTime))
+        if (!Objects.equals(purchaseTime, orders.purchaseTime))
             return false;
-        if (!Objects.equals(purchaserName, tbOrders.purchaserName))
+        if (!Objects.equals(purchaserName, orders.purchaserName))
             return false;
-        if (!Objects.equals(status, tbOrders.status)) return false;
-        return Objects.equals(amount, tbOrders.amount);
+        if (!Objects.equals(status, orders.status)) return false;
+        return Objects.equals(amount, orders.amount);
     }
 
     @Override

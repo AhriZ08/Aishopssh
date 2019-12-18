@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.Aishopssh.Entites.TbAdmin" table="tb_admin" schema="e_shopwebsite">
+    <class name="com.Aishopssh.Entites.Admin" table="tb_admin" schema="e_shopwebsite">
         <id name="id" column="id"/>
         <property name="name" column="Name"/>
         <property name="pwd" column="Pwd"/>

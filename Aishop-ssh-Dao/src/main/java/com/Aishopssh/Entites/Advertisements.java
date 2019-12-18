@@ -5,7 +5,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "tb_advertisements", schema = "e_shopwebsite")
-public class TbAdvertisements {
+public class Advertisements {
     private int id;
     private String path;
     private String url;
@@ -67,7 +67,7 @@ public class TbAdvertisements {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TbAdvertisements that = (TbAdvertisements) o;
+        Advertisements that = (Advertisements) o;
 
         if (id != that.id) return false;
         if (!Objects.equals(path, that.path)) return false;

@@ -4,10 +4,10 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tb_type_3", schema = "e_shopwebsite")
-public class TbType3 {
+@Table(name = "tb_pwd_rest", schema = "e_shopwebsite")
+public class PwdRest {
     private int id;
-    private String typeName;
+    private String isAccepted;
 
     @Id
     @Column(name = "ID")
@@ -20,13 +20,13 @@ public class TbType3 {
     }
 
     @Basic
-    @Column(name = "TypeName")
-    public String getTypeName() {
-        return typeName;
+    @Column(name = "Is_Accepted")
+    public String getIsAccepted() {
+        return isAccepted;
     }
 
-    public void setTypeName(String typeName) {
-        this.typeName = typeName;
+    public void setIsAccepted(String isAccepted) {
+        this.isAccepted = isAccepted;
     }
 
     @Override
@@ -34,16 +34,16 @@ public class TbType3 {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TbType3 tbType3 = (TbType3) o;
+        PwdRest pwdRest = (PwdRest) o;
 
-        if (id != tbType3.id) return false;
-        return Objects.equals(typeName, tbType3.typeName);
+        if (id != pwdRest.id) return false;
+        return Objects.equals(isAccepted, pwdRest.isAccepted);
     }
 
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + (typeName != null ? typeName.hashCode() : 0);
+        result = 31 * result + (isAccepted != null ? isAccepted.hashCode() : 0);
         return result;
     }
 }

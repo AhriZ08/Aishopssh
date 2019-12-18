@@ -5,7 +5,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "tb_admin", schema = "e_shopwebsite")
-public class TbAdmin {
+public class Admin {
     private int id;
     private String name;
     private String pwd;
@@ -45,7 +45,7 @@ public class TbAdmin {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TbAdmin tbAdmin = (TbAdmin) o;
+        Admin tbAdmin = (Admin) o;
 
         if (id != tbAdmin.id) return false;
         if (!Objects.equals(name, tbAdmin.name)) return false;

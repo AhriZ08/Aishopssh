@@ -5,7 +5,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "tb_notice", schema = "e_shopwebsite")
-public class TbNotice {
+public class Notice {
     private int id;
     private String title;
     private String content;
@@ -56,12 +56,12 @@ public class TbNotice {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TbNotice tbNotice = (TbNotice) o;
+        Notice notice = (Notice) o;
 
-        if (id != tbNotice.id) return false;
-        if (!Objects.equals(title, tbNotice.title)) return false;
-        if (!Objects.equals(content, tbNotice.content)) return false;
-        return Objects.equals(time, tbNotice.time);
+        if (id != notice.id) return false;
+        if (!Objects.equals(title, notice.title)) return false;
+        if (!Objects.equals(content, notice.content)) return false;
+        return Objects.equals(time, notice.time);
     }
 
     @Override

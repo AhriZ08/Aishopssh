@@ -5,7 +5,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "tb_cartlist", schema = "e_shopwebsite")
-public class TbCartlist {
+public class Cartlist {
     private int id;
     private int goodsNum;
     private String goodsAddTime;
@@ -56,7 +56,7 @@ public class TbCartlist {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TbCartlist that = (TbCartlist) o;
+        Cartlist that = (Cartlist) o;
 
         if (id != that.id) return false;
         if (goodsNum != that.goodsNum) return false;

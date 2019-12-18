@@ -5,7 +5,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "tb_admin_reply", schema = "e_shopwebsite")
-public class TbAdminReply {
+public class AdminReply {
     private int id;
     private int leavewordId;
     private String title;
@@ -78,7 +78,7 @@ public class TbAdminReply {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TbAdminReply that = (TbAdminReply) o;
+        AdminReply that = (AdminReply) o;
 
         if (id != that.id) return false;
         if (leavewordId != that.leavewordId) return false;

@@ -4,8 +4,8 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.Aishopssh.Entites.TbType2" table="tb_type_2" schema="e_shopwebsite">
+    <class name="com.Aishopssh.Entites.PwdRest" table="tb_pwd_rest" schema="e_shopwebsite">
         <id name="id" column="ID"/>
-        <property name="typeName" column="TypeName"/>
+        <property name="isAccepted" column="Is_Accepted"/>
     </class>
 </hibernate-mapping>

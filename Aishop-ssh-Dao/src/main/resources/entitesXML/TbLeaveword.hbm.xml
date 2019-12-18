@@ -4,12 +4,11 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.Aishopssh.Entites.TbAdminReply" table="tb_admin_reply" schema="e_shopwebsite">
+    <class name="com.Aishopssh.Entites.Leaveword" table="tb_leaveword" schema="e_shopwebsite">
         <id name="id" column="ID"/>
-        <property name="leavewordId" column="leavewordID"/>
         <property name="title" column="Title"/>
         <property name="content" column="Content"/>
-        <property name="replyTime" column="ReplyTime"/>
-        <property name="isRead" column="Is_Read"/>
+        <property name="time" column="Time"/>
+        <property name="isReply" column="Is_Reply"/>
     </class>
 </hibernate-mapping>

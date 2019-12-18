@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.Aishopssh.Entites.TbOrders" table="tb_orders" schema="e_shopwebsite">
+    <class name="com.Aishopssh.Entites.Orders" table="tb_orders" schema="e_shopwebsite">
         <id name="id" column="ID"/>
         <property name="num" column="Num"/>
         <property name="consigneeName" column="Consignee_Name"/>

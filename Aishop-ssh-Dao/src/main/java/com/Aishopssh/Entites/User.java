@@ -5,7 +5,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "tb_user", schema = "e_shopwebsite")
-public class TbUser {
+public class User {
     private int id;
     private String name;
     private String pwd;
@@ -199,29 +199,29 @@ public class TbUser {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TbUser tbUser = (TbUser) o;
+        User user = (User) o;
 
-        if (id != tbUser.id) return false;
-        if (blocked != tbUser.blocked) return false;
-        if (loginTime != tbUser.loginTime) return false;
-        if (!Objects.equals(name, tbUser.name)) return false;
-        if (!Objects.equals(pwd, tbUser.pwd)) return false;
-        if (!Objects.equals(email, tbUser.email)) return false;
-        if (!Objects.equals(tel, tbUser.tel)) return false;
-        if (!Objects.equals(qq, tbUser.qq)) return false;
-        if (!Objects.equals(ip, tbUser.ip)) return false;
-        if (!Objects.equals(securityQuestion, tbUser.securityQuestion))
+        if (id != user.id) return false;
+        if (blocked != user.blocked) return false;
+        if (loginTime != user.loginTime) return false;
+        if (!Objects.equals(name, user.name)) return false;
+        if (!Objects.equals(pwd, user.pwd)) return false;
+        if (!Objects.equals(email, user.email)) return false;
+        if (!Objects.equals(tel, user.tel)) return false;
+        if (!Objects.equals(qq, user.qq)) return false;
+        if (!Objects.equals(ip, user.ip)) return false;
+        if (!Objects.equals(securityQuestion, user.securityQuestion))
             return false;
-        if (!Objects.equals(securityAnswer, tbUser.securityAnswer))
+        if (!Objects.equals(securityAnswer, user.securityAnswer))
             return false;
-        if (!Objects.equals(addr, tbUser.addr)) return false;
-        if (!Objects.equals(postcode, tbUser.postcode)) return false;
-        if (!Objects.equals(registerTime, tbUser.registerTime))
+        if (!Objects.equals(addr, user.addr)) return false;
+        if (!Objects.equals(postcode, user.postcode)) return false;
+        if (!Objects.equals(registerTime, user.registerTime))
             return false;
-        if (!Objects.equals(recentLoginTime, tbUser.recentLoginTime))
+        if (!Objects.equals(recentLoginTime, user.recentLoginTime))
             return false;
-        if (!Objects.equals(trueName, tbUser.trueName)) return false;
-        return Objects.equals(comfirmPwd, tbUser.comfirmPwd);
+        if (!Objects.equals(trueName, user.trueName)) return false;
+        return Objects.equals(comfirmPwd, user.comfirmPwd);
     }
 
     @Override
