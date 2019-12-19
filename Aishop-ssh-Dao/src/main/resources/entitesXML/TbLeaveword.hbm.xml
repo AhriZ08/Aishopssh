@@ -5,7 +5,9 @@
 <hibernate-mapping>
 
     <class name="com.Aishopssh.Entites.Leaveword" table="tb_leaveword" schema="e_shopwebsite">
-        <id name="id" column="ID"/>
+        <id name="id" column="ID">
+            <generator class="uuid"/>
+        </id>
         <property name="title" column="Title"/>
         <property name="content" column="Content"/>
         <property name="time" column="Time"/>

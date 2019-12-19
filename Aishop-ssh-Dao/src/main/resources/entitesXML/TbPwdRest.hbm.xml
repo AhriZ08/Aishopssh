@@ -5,7 +5,9 @@
 <hibernate-mapping>
 
     <class name="com.Aishopssh.Entites.PwdRest" table="tb_pwd_rest" schema="e_shopwebsite">
-        <id name="id" column="ID"/>
+        <id name="id" column="ID">
+            <generator class="uuid"/>
+        </id>
         <property name="isAccepted" column="Is_Accepted"/>
     </class>
 </hibernate-mapping>

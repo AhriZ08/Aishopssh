@@ -3,9 +3,10 @@
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-
     <class name="com.Aishopssh.Entites.Admin" table="tb_admin" schema="e_shopwebsite">
-        <id name="id" column="id"/>
+        <id name="id" column="id">
+            <generator class="uuid"/>
+        </id>
         <property name="name" column="Name"/>
         <property name="pwd" column="Pwd"/>
     </class>

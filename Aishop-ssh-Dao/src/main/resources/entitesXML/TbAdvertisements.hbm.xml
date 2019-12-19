@@ -5,7 +5,9 @@
 <hibernate-mapping>
 
     <class name="com.Aishopssh.Entites.Advertisements" table="tb_advertisements" schema="e_shopwebsite">
-        <id name="id" column="ID"/>
+        <id name="id" column="ID">
+            <generator class="uuid"/>
+        </id>
         <property name="path" column="Path"/>
         <property name="url" column="URL"/>
         <property name="width" column="Width"/>

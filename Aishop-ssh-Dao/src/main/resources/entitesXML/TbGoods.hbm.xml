@@ -5,7 +5,9 @@
 <hibernate-mapping>
 
     <class name="com.Aishopssh.Entites.Goods" table="tb_goods" schema="e_shopwebsite">
-        <id name="id" column="ID"/>
+        <id name="id" column="ID">
+            <generator class="uuid"/>
+        </id>
         <property name="name" column="Name"/>
         <property name="introduction" column="Introduction"/>
         <property name="addtime" column="Addtime"/>
