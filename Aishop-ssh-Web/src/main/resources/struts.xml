@@ -17,8 +17,9 @@
     <constant name="struts.serve.static.browserCache" value="false" />
     <!-- 指定由spring负责action对象的创建 -->
     <constant name="struts.objectFactory" value="spring" />
-
     <!-- 是否开启动态方法调用,使用叹号访问方法 -->
     <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+
+
 
 </struts>
