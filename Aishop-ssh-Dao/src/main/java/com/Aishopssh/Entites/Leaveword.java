@@ -1,19 +1,16 @@
 package com.Aishopssh.Entites;
 
-import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
-@Table(name = "tb_leaveword", schema = "e_shopwebsite")
 public class Leaveword {
     private int id;
+    private int userId;
     private String title;
     private String content;
     private String time;
     private int isReply;
+    private User tbUserByUserId;
 
-    @Id
-    @Column(name = "ID")
     public int getId() {
         return id;
     }
@@ -22,8 +19,14 @@ public class Leaveword {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "Title")
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -32,8 +35,6 @@ public class Leaveword {
         this.title = title;
     }
 
-    @Basic
-    @Column(name = "Content")
     public String getContent() {
         return content;
     }
@@ -42,8 +43,6 @@ public class Leaveword {
         this.content = content;
     }
 
-    @Basic
-    @Column(name = "Time")
     public String getTime() {
         return time;
     }
@@ -52,8 +51,6 @@ public class Leaveword {
         this.time = time;
     }
 
-    @Basic
-    @Column(name = "Is_Reply")
     public int getIsReply() {
         return isReply;
     }
@@ -67,22 +64,32 @@ public class Leaveword {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Leaveword that = (Leaveword) o;
+        Leaveword leaveword = (Leaveword) o;
 
-        if (id != that.id) return false;
-        if (isReply != that.isReply) return false;
-        if (!Objects.equals(title, that.title)) return false;
-        if (!Objects.equals(content, that.content)) return false;
-        return Objects.equals(time, that.time);
+        if (id != leaveword.id) return false;
+        if (userId != leaveword.userId) return false;
+        if (isReply != leaveword.isReply) return false;
+        if (!Objects.equals(title, leaveword.title)) return false;
+        if (!Objects.equals(content, leaveword.content)) return false;
+        return Objects.equals(time, leaveword.time);
     }
 
     @Override
     public int hashCode() {
         int result = id;
+        result = 31 * result + userId;
         result = 31 * result + (title != null ? title.hashCode() : 0);
         result = 31 * result + (content != null ? content.hashCode() : 0);
         result = 31 * result + (time != null ? time.hashCode() : 0);
         result = 31 * result + isReply;
         return result;
+    }
+
+    public User getTbUserByUserId() {
+        return tbUserByUserId;
+    }
+
+    public void setTbUserByUserId(User tbUserByUserId) {
+        this.tbUserByUserId = tbUserByUserId;
     }
 }

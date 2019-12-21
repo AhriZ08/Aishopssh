@@ -1,18 +1,17 @@
 package com.Aishopssh.Entites;
 
-import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
-@Table(name = "tb_comments", schema = "e_shopwebsite")
 public class Comments {
     private int id;
+    private int userId;
+    private int goodsId;
     private String title;
     private String content;
     private String time;
+    private User tbUserByUserId;
+    private Goods tbGoodsByGoodsId;
 
-    @Id
-    @Column(name = "ID")
     public int getId() {
         return id;
     }
@@ -21,8 +20,22 @@ public class Comments {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "Title")
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public int getGoodsId() {
+        return goodsId;
+    }
+
+    public void setGoodsId(int goodsId) {
+        this.goodsId = goodsId;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -31,8 +44,6 @@ public class Comments {
         this.title = title;
     }
 
-    @Basic
-    @Column(name = "Content")
     public String getContent() {
         return content;
     }
@@ -41,8 +52,6 @@ public class Comments {
         this.content = content;
     }
 
-    @Basic
-    @Column(name = "Time")
     public String getTime() {
         return time;
     }
@@ -56,20 +65,40 @@ public class Comments {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Comments that = (Comments) o;
+        Comments comments = (Comments) o;
 
-        if (id != that.id) return false;
-        if (!Objects.equals(title, that.title)) return false;
-        if (!Objects.equals(content, that.content)) return false;
-        return Objects.equals(time, that.time);
+        if (id != comments.id) return false;
+        if (userId != comments.userId) return false;
+        if (goodsId != comments.goodsId) return false;
+        if (!Objects.equals(title, comments.title)) return false;
+        if (!Objects.equals(content, comments.content)) return false;
+        return Objects.equals(time, comments.time);
     }
 
     @Override
     public int hashCode() {
         int result = id;
+        result = 31 * result + userId;
+        result = 31 * result + goodsId;
         result = 31 * result + (title != null ? title.hashCode() : 0);
         result = 31 * result + (content != null ? content.hashCode() : 0);
         result = 31 * result + (time != null ? time.hashCode() : 0);
         return result;
+    }
+
+    public User getTbUserByUserId() {
+        return tbUserByUserId;
+    }
+
+    public void setTbUserByUserId(User tbUserByUserId) {
+        this.tbUserByUserId = tbUserByUserId;
+    }
+
+    public Goods getTbGoodsByGoodsId() {
+        return tbGoodsByGoodsId;
+    }
+
+    public void setTbGoodsByGoodsId(Goods tbGoodsByGoodsId) {
+        this.tbGoodsByGoodsId = tbGoodsByGoodsId;
     }
 }

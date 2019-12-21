@@ -1,10 +1,8 @@
 package com.Aishopssh.Entites;
 
-import javax.persistence.*;
+import java.util.Collection;
 import java.util.Objects;
 
-@Entity
-@Table(name = "tb_user", schema = "e_shopwebsite")
 public class User {
     private int id;
     private String name;
@@ -23,9 +21,12 @@ public class User {
     private int loginTime;
     private String trueName;
     private String comfirmPwd;
+    private Collection<AdminReply> tbAdminRepliesById;
+    private Collection<Cartlist> tbCartlistsById;
+    private Collection<Comments> tbCommentsById;
+    private Collection<Leaveword> tbLeavewordsById;
+    private Collection<PwdRest> tbPwdRestsById;
 
-    @Id
-    @Column(name = "ID")
     public int getId() {
         return id;
     }
@@ -34,8 +35,6 @@ public class User {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "Name")
     public String getName() {
         return name;
     }
@@ -44,8 +43,6 @@ public class User {
         this.name = name;
     }
 
-    @Basic
-    @Column(name = "Pwd")
     public String getPwd() {
         return pwd;
     }
@@ -54,8 +51,6 @@ public class User {
         this.pwd = pwd;
     }
 
-    @Basic
-    @Column(name = "Blocked")
     public int getBlocked() {
         return blocked;
     }
@@ -64,8 +59,6 @@ public class User {
         this.blocked = blocked;
     }
 
-    @Basic
-    @Column(name = "Email")
     public String getEmail() {
         return email;
     }
@@ -74,8 +67,6 @@ public class User {
         this.email = email;
     }
 
-    @Basic
-    @Column(name = "Tel")
     public String getTel() {
         return tel;
     }
@@ -84,8 +75,6 @@ public class User {
         this.tel = tel;
     }
 
-    @Basic
-    @Column(name = "QQ")
     public String getQq() {
         return qq;
     }
@@ -94,8 +83,6 @@ public class User {
         this.qq = qq;
     }
 
-    @Basic
-    @Column(name = "IP")
     public String getIp() {
         return ip;
     }
@@ -104,8 +91,6 @@ public class User {
         this.ip = ip;
     }
 
-    @Basic
-    @Column(name = "SecurityQuestion")
     public String getSecurityQuestion() {
         return securityQuestion;
     }
@@ -114,8 +99,6 @@ public class User {
         this.securityQuestion = securityQuestion;
     }
 
-    @Basic
-    @Column(name = "SecurityAnswer")
     public String getSecurityAnswer() {
         return securityAnswer;
     }
@@ -124,8 +107,6 @@ public class User {
         this.securityAnswer = securityAnswer;
     }
 
-    @Basic
-    @Column(name = "Addr")
     public String getAddr() {
         return addr;
     }
@@ -134,8 +115,6 @@ public class User {
         this.addr = addr;
     }
 
-    @Basic
-    @Column(name = "Postcode")
     public String getPostcode() {
         return postcode;
     }
@@ -144,8 +123,6 @@ public class User {
         this.postcode = postcode;
     }
 
-    @Basic
-    @Column(name = "RegisterTime")
     public String getRegisterTime() {
         return registerTime;
     }
@@ -154,8 +131,6 @@ public class User {
         this.registerTime = registerTime;
     }
 
-    @Basic
-    @Column(name = "RecentLoginTime")
     public String getRecentLoginTime() {
         return recentLoginTime;
     }
@@ -164,8 +139,6 @@ public class User {
         this.recentLoginTime = recentLoginTime;
     }
 
-    @Basic
-    @Column(name = "LoginTime")
     public int getLoginTime() {
         return loginTime;
     }
@@ -174,8 +147,6 @@ public class User {
         this.loginTime = loginTime;
     }
 
-    @Basic
-    @Column(name = "TrueName")
     public String getTrueName() {
         return trueName;
     }
@@ -184,8 +155,6 @@ public class User {
         this.trueName = trueName;
     }
 
-    @Basic
-    @Column(name = "ComfirmPwd")
     public String getComfirmPwd() {
         return comfirmPwd;
     }
@@ -216,8 +185,7 @@ public class User {
             return false;
         if (!Objects.equals(addr, user.addr)) return false;
         if (!Objects.equals(postcode, user.postcode)) return false;
-        if (!Objects.equals(registerTime, user.registerTime))
-            return false;
+        if (!Objects.equals(registerTime, user.registerTime)) return false;
         if (!Objects.equals(recentLoginTime, user.recentLoginTime))
             return false;
         if (!Objects.equals(trueName, user.trueName)) return false;
@@ -244,5 +212,45 @@ public class User {
         result = 31 * result + (trueName != null ? trueName.hashCode() : 0);
         result = 31 * result + (comfirmPwd != null ? comfirmPwd.hashCode() : 0);
         return result;
+    }
+
+    public Collection<AdminReply> getTbAdminRepliesById() {
+        return tbAdminRepliesById;
+    }
+
+    public void setTbAdminRepliesById(Collection<AdminReply> tbAdminRepliesById) {
+        this.tbAdminRepliesById = tbAdminRepliesById;
+    }
+
+    public Collection<Cartlist> getTbCartlistsById() {
+        return tbCartlistsById;
+    }
+
+    public void setTbCartlistsById(Collection<Cartlist> tbCartlistsById) {
+        this.tbCartlistsById = tbCartlistsById;
+    }
+
+    public Collection<Comments> getTbCommentsById() {
+        return tbCommentsById;
+    }
+
+    public void setTbCommentsById(Collection<Comments> tbCommentsById) {
+        this.tbCommentsById = tbCommentsById;
+    }
+
+    public Collection<Leaveword> getTbLeavewordsById() {
+        return tbLeavewordsById;
+    }
+
+    public void setTbLeavewordsById(Collection<Leaveword> tbLeavewordsById) {
+        this.tbLeavewordsById = tbLeavewordsById;
+    }
+
+    public Collection<PwdRest> getTbPwdRestsById() {
+        return tbPwdRestsById;
+    }
+
+    public void setTbPwdRestsById(Collection<PwdRest> tbPwdRestsById) {
+        this.tbPwdRestsById = tbPwdRestsById;
     }
 }

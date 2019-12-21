@@ -1,10 +1,7 @@
 package com.Aishopssh.Entites;
 
-import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
-@Table(name = "tb_advertisements", schema = "e_shopwebsite")
 public class Advertisements {
     private int id;
     private String path;
@@ -12,8 +9,6 @@ public class Advertisements {
     private String width;
     private String height;
 
-    @Id
-    @Column(name = "ID")
     public int getId() {
         return id;
     }
@@ -22,8 +17,6 @@ public class Advertisements {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "Path")
     public String getPath() {
         return path;
     }
@@ -32,8 +25,6 @@ public class Advertisements {
         this.path = path;
     }
 
-    @Basic
-    @Column(name = "URL")
     public String getUrl() {
         return url;
     }
@@ -42,8 +33,6 @@ public class Advertisements {
         this.url = url;
     }
 
-    @Basic
-    @Column(name = "Width")
     public String getWidth() {
         return width;
     }
@@ -52,8 +41,6 @@ public class Advertisements {
         this.width = width;
     }
 
-    @Basic
-    @Column(name = "Height")
     public String getHeight() {
         return height;
     }

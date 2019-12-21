@@ -1,18 +1,13 @@
 package com.Aishopssh.Entites;
 
-import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
-@Table(name = "tb_notice", schema = "e_shopwebsite")
 public class Notice {
     private int id;
     private String title;
     private String content;
     private String time;
 
-    @Id
-    @Column(name = "ID")
     public int getId() {
         return id;
     }
@@ -21,8 +16,6 @@ public class Notice {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "Title")
     public String getTitle() {
         return title;
     }
@@ -31,8 +24,6 @@ public class Notice {
         this.title = title;
     }
 
-    @Basic
-    @Column(name = "Content")
     public String getContent() {
         return content;
     }
@@ -41,8 +32,6 @@ public class Notice {
         this.content = content;
     }
 
-    @Basic
-    @Column(name = "Time")
     public String getTime() {
         return time;
     }

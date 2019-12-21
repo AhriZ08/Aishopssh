@@ -1,18 +1,17 @@
 package com.Aishopssh.Entites;
 
-import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
-@Table(name = "tb_cartlist", schema = "e_shopwebsite")
 public class Cartlist {
     private int id;
+    private int goodsId;
+    private int userId;
     private int goodsNum;
     private String goodsAddTime;
     private String orderNum;
+    private Goods tbGoodsByGoodsId;
+    private User tbUserByUserId;
 
-    @Id
-    @Column(name = "ID")
     public int getId() {
         return id;
     }
@@ -21,8 +20,22 @@ public class Cartlist {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "GoodsNum")
+    public int getGoodsId() {
+        return goodsId;
+    }
+
+    public void setGoodsId(int goodsId) {
+        this.goodsId = goodsId;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
     public int getGoodsNum() {
         return goodsNum;
     }
@@ -31,8 +44,6 @@ public class Cartlist {
         this.goodsNum = goodsNum;
     }
 
-    @Basic
-    @Column(name = "GoodsAddTime")
     public String getGoodsAddTime() {
         return goodsAddTime;
     }
@@ -41,8 +52,6 @@ public class Cartlist {
         this.goodsAddTime = goodsAddTime;
     }
 
-    @Basic
-    @Column(name = "OrderNum")
     public String getOrderNum() {
         return orderNum;
     }
@@ -56,20 +65,41 @@ public class Cartlist {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Cartlist that = (Cartlist) o;
+        Cartlist cartlist = (Cartlist) o;
 
-        if (id != that.id) return false;
-        if (goodsNum != that.goodsNum) return false;
-        if (!Objects.equals(goodsAddTime, that.goodsAddTime)) return false;
-        return Objects.equals(orderNum, that.orderNum);
+        if (id != cartlist.id) return false;
+        if (goodsId != cartlist.goodsId) return false;
+        if (userId != cartlist.userId) return false;
+        if (goodsNum != cartlist.goodsNum) return false;
+        if (!Objects.equals(goodsAddTime, cartlist.goodsAddTime))
+            return false;
+        return Objects.equals(orderNum, cartlist.orderNum);
     }
 
     @Override
     public int hashCode() {
         int result = id;
+        result = 31 * result + goodsId;
+        result = 31 * result + userId;
         result = 31 * result + goodsNum;
         result = 31 * result + (goodsAddTime != null ? goodsAddTime.hashCode() : 0);
         result = 31 * result + (orderNum != null ? orderNum.hashCode() : 0);
         return result;
+    }
+
+    public Goods getTbGoodsByGoodsId() {
+        return tbGoodsByGoodsId;
+    }
+
+    public void setTbGoodsByGoodsId(Goods tbGoodsByGoodsId) {
+        this.tbGoodsByGoodsId = tbGoodsByGoodsId;
+    }
+
+    public User getTbUserByUserId() {
+        return tbUserByUserId;
+    }
+
+    public void setTbUserByUserId(User tbUserByUserId) {
+        this.tbUserByUserId = tbUserByUserId;
     }
 }

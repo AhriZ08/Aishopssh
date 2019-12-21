@@ -1,16 +1,13 @@
 package com.Aishopssh.Entites;
 
-import javax.persistence.*;
+import java.util.Collection;
 import java.util.Objects;
 
-@Entity
-@Table(name = "tb_type_1", schema = "e_shopwebsite")
 public class Type1 {
     private int id;
     private String typeName;
+    private Collection<Type2> tbType2sById;
 
-    @Id
-    @Column(name = "ID")
     public int getId() {
         return id;
     }
@@ -19,8 +16,6 @@ public class Type1 {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "TypeName")
     public String getTypeName() {
         return typeName;
     }
@@ -45,5 +40,13 @@ public class Type1 {
         int result = id;
         result = 31 * result + (typeName != null ? typeName.hashCode() : 0);
         return result;
+    }
+
+    public Collection<Type2> getTbType2sById() {
+        return tbType2sById;
+    }
+
+    public void setTbType2sById(Collection<Type2> tbType2sById) {
+        this.tbType2sById = tbType2sById;
     }
 }

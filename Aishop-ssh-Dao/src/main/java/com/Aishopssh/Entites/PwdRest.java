@@ -1,16 +1,13 @@
 package com.Aishopssh.Entites;
 
-import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
-@Table(name = "tb_pwd_rest", schema = "e_shopwebsite")
 public class PwdRest {
     private int id;
+    private int userId;
     private String isAccepted;
+    private User tbUserByUserId;
 
-    @Id
-    @Column(name = "ID")
     public int getId() {
         return id;
     }
@@ -19,8 +16,14 @@ public class PwdRest {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "Is_Accepted")
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
     public String getIsAccepted() {
         return isAccepted;
     }
@@ -37,13 +40,23 @@ public class PwdRest {
         PwdRest pwdRest = (PwdRest) o;
 
         if (id != pwdRest.id) return false;
+        if (userId != pwdRest.userId) return false;
         return Objects.equals(isAccepted, pwdRest.isAccepted);
     }
 
     @Override
     public int hashCode() {
         int result = id;
+        result = 31 * result + userId;
         result = 31 * result + (isAccepted != null ? isAccepted.hashCode() : 0);
         return result;
+    }
+
+    public User getTbUserByUserId() {
+        return tbUserByUserId;
+    }
+
+    public void setTbUserByUserId(User tbUserByUserId) {
+        this.tbUserByUserId = tbUserByUserId;
     }
 }

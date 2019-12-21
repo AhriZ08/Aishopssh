@@ -1,17 +1,12 @@
 package com.Aishopssh.Entites;
 
-import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
-@Table(name = "tb_admin", schema = "e_shopwebsite")
 public class Admin {
     private int id;
     private String name;
     private String pwd;
 
-    @Id
-    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -20,8 +15,6 @@ public class Admin {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "Name")
     public String getName() {
         return name;
     }
@@ -30,8 +23,6 @@ public class Admin {
         this.name = name;
     }
 
-    @Basic
-    @Column(name = "Pwd")
     public String getPwd() {
         return pwd;
     }
@@ -45,11 +36,11 @@ public class Admin {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Admin tbAdmin = (Admin) o;
+        Admin admin = (Admin) o;
 
-        if (id != tbAdmin.id) return false;
-        if (!Objects.equals(name, tbAdmin.name)) return false;
-        return Objects.equals(pwd, tbAdmin.pwd);
+        if (id != admin.id) return false;
+        if (!Objects.equals(name, admin.name)) return false;
+        return Objects.equals(pwd, admin.pwd);
     }
 
     @Override

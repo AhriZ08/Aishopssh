@@ -1,10 +1,7 @@
 package com.Aishopssh.Entites;
 
-import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
-@Table(name = "tb_orders", schema = "e_shopwebsite")
 public class Orders {
     private int id;
     private String num;
@@ -21,8 +18,6 @@ public class Orders {
     private String status;
     private String amount;
 
-    @Id
-    @Column(name = "ID")
     public int getId() {
         return id;
     }
@@ -31,8 +26,6 @@ public class Orders {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "Num")
     public String getNum() {
         return num;
     }
@@ -41,8 +34,6 @@ public class Orders {
         this.num = num;
     }
 
-    @Basic
-    @Column(name = "Consignee_Name")
     public String getConsigneeName() {
         return consigneeName;
     }
@@ -51,8 +42,6 @@ public class Orders {
         this.consigneeName = consigneeName;
     }
 
-    @Basic
-    @Column(name = "Consignee_Sex")
     public String getConsigneeSex() {
         return consigneeSex;
     }
@@ -61,8 +50,6 @@ public class Orders {
         this.consigneeSex = consigneeSex;
     }
 
-    @Basic
-    @Column(name = "Consignee_Addr")
     public String getConsigneeAddr() {
         return consigneeAddr;
     }
@@ -71,8 +58,6 @@ public class Orders {
         this.consigneeAddr = consigneeAddr;
     }
 
-    @Basic
-    @Column(name = "Postcode")
     public String getPostcode() {
         return postcode;
     }
@@ -81,8 +66,6 @@ public class Orders {
         this.postcode = postcode;
     }
 
-    @Basic
-    @Column(name = "Tel")
     public String getTel() {
         return tel;
     }
@@ -91,8 +74,6 @@ public class Orders {
         this.tel = tel;
     }
 
-    @Basic
-    @Column(name = "Consignee_RecTime")
     public String getConsigneeRecTime() {
         return consigneeRecTime;
     }
@@ -101,8 +82,6 @@ public class Orders {
         this.consigneeRecTime = consigneeRecTime;
     }
 
-    @Basic
-    @Column(name = "Payment_Type")
     public String getPaymentType() {
         return paymentType;
     }
@@ -111,8 +90,6 @@ public class Orders {
         this.paymentType = paymentType;
     }
 
-    @Basic
-    @Column(name = "Purchaser_LeaveWord")
     public String getPurchaserLeaveWord() {
         return purchaserLeaveWord;
     }
@@ -121,8 +98,6 @@ public class Orders {
         this.purchaserLeaveWord = purchaserLeaveWord;
     }
 
-    @Basic
-    @Column(name = "PurchaseTime")
     public String getPurchaseTime() {
         return purchaseTime;
     }
@@ -131,8 +106,6 @@ public class Orders {
         this.purchaseTime = purchaseTime;
     }
 
-    @Basic
-    @Column(name = "PurchaserName")
     public String getPurchaserName() {
         return purchaserName;
     }
@@ -141,8 +114,6 @@ public class Orders {
         this.purchaserName = purchaserName;
     }
 
-    @Basic
-    @Column(name = "Status")
     public String getStatus() {
         return status;
     }
@@ -151,8 +122,6 @@ public class Orders {
         this.status = status;
     }
 
-    @Basic
-    @Column(name = "Amount")
     public String getAmount() {
         return amount;
     }
@@ -180,8 +149,7 @@ public class Orders {
         if (!Objects.equals(tel, orders.tel)) return false;
         if (!Objects.equals(consigneeRecTime, orders.consigneeRecTime))
             return false;
-        if (!Objects.equals(paymentType, orders.paymentType))
-            return false;
+        if (!Objects.equals(paymentType, orders.paymentType)) return false;
         if (!Objects.equals(purchaserLeaveWord, orders.purchaserLeaveWord))
             return false;
         if (!Objects.equals(purchaseTime, orders.purchaseTime))

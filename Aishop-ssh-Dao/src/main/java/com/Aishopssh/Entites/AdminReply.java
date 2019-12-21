@@ -1,20 +1,17 @@
 package com.Aishopssh.Entites;
 
-import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
-@Table(name = "tb_admin_reply", schema = "e_shopwebsite")
 public class AdminReply {
     private int id;
+    private int userId;
     private int leavewordId;
     private String title;
     private String content;
     private String replyTime;
     private int isRead;
+    private User tbUserByUserId;
 
-    @Id
-    @Column(name = "ID")
     public int getId() {
         return id;
     }
@@ -23,8 +20,14 @@ public class AdminReply {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "leavewordID")
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
     public int getLeavewordId() {
         return leavewordId;
     }
@@ -33,8 +36,6 @@ public class AdminReply {
         this.leavewordId = leavewordId;
     }
 
-    @Basic
-    @Column(name = "Title")
     public String getTitle() {
         return title;
     }
@@ -43,8 +44,6 @@ public class AdminReply {
         this.title = title;
     }
 
-    @Basic
-    @Column(name = "Content")
     public String getContent() {
         return content;
     }
@@ -53,8 +52,6 @@ public class AdminReply {
         this.content = content;
     }
 
-    @Basic
-    @Column(name = "ReplyTime")
     public String getReplyTime() {
         return replyTime;
     }
@@ -63,8 +60,6 @@ public class AdminReply {
         this.replyTime = replyTime;
     }
 
-    @Basic
-    @Column(name = "Is_Read")
     public int getIsRead() {
         return isRead;
     }
@@ -81,6 +76,7 @@ public class AdminReply {
         AdminReply that = (AdminReply) o;
 
         if (id != that.id) return false;
+        if (userId != that.userId) return false;
         if (leavewordId != that.leavewordId) return false;
         if (isRead != that.isRead) return false;
         if (!Objects.equals(title, that.title)) return false;
@@ -91,11 +87,20 @@ public class AdminReply {
     @Override
     public int hashCode() {
         int result = id;
+        result = 31 * result + userId;
         result = 31 * result + leavewordId;
         result = 31 * result + (title != null ? title.hashCode() : 0);
         result = 31 * result + (content != null ? content.hashCode() : 0);
         result = 31 * result + (replyTime != null ? replyTime.hashCode() : 0);
         result = 31 * result + isRead;
         return result;
+    }
+
+    public User getTbUserByUserId() {
+        return tbUserByUserId;
+    }
+
+    public void setTbUserByUserId(User tbUserByUserId) {
+        this.tbUserByUserId = tbUserByUserId;
     }
 }
