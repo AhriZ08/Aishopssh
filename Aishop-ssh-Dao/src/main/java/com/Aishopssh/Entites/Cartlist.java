@@ -1,8 +1,9 @@
 package com.Aishopssh.Entites;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Cartlist {
+public class Cartlist implements Serializable {
     private int id;
     private int goodsId;
     private int userId;

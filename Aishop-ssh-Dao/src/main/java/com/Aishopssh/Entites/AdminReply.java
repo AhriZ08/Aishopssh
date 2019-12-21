@@ -1,8 +1,9 @@
 package com.Aishopssh.Entites;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class AdminReply {
+public class AdminReply implements Serializable {
     private int id;
     private int userId;
     private int leavewordId;

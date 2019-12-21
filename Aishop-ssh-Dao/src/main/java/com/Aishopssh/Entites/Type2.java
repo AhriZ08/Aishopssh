@@ -1,9 +1,10 @@
 package com.Aishopssh.Entites;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.Objects;
 
-public class Type2 {
+public class Type2 implements Serializable {
     private int id;
     private String typeName;
     private int typeIdLevel1;

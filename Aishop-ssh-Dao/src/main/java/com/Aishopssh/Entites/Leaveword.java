@@ -1,8 +1,9 @@
 package com.Aishopssh.Entites;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Leaveword {
+public class Leaveword implements Serializable {
     private int id;
     private int userId;
     private String title;
