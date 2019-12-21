@@ -5,8 +5,8 @@
 <hibernate-mapping>
 
     <class name="com.Aishopssh.Entites.Goods" table="tb_goods" schema="e_shopwebsite">
-        <id name="id" column="ID">
-            <generator class="uuid"/>
+        <id name="id" column="id">
+            <generator class="native"/>
         </id>
         <property name="name" column="Name"/>
         <property name="introduction" column="Introduction"/>
@@ -24,5 +24,17 @@
         <property name="marketPirce" column="MarketPirce"/>
         <property name="brand" column="Brand"/>
         <property name="isSpecialPrice" column="Is_SpecialPrice"/>
+        <set name="tbCartlistsById" inverse="true">
+            <key>
+                <column name="GoodsID"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.Aishopssh.Entites.Cartlist"/>
+        </set>
+        <set name="tbCommentsById" inverse="true">
+            <key>
+                <column name="GoodsID"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.Aishopssh.Entites.Comments"/>
+        </set>
     </class>
 </hibernate-mapping>

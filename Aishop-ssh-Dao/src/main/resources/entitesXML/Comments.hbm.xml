@@ -5,11 +5,19 @@
 <hibernate-mapping>
 
     <class name="com.Aishopssh.Entites.Comments" table="tb_comments" schema="e_shopwebsite">
-        <id name="id" column="ID">
-            <generator class="uuid"/>
+        <id name="id" column="id">
+            <generator class="native"/>
         </id>
+        <property name="userId" column="UserID"/>
+        <property name="goodsId" column="GoodsID"/>
         <property name="title" column="Title"/>
         <property name="content" column="Content"/>
         <property name="time" column="Time"/>
+        <many-to-one name="tbUserByUserId" class="com.Aishopssh.Entites.User">
+            <column name="UserID"/>
+        </many-to-one>
+        <many-to-one name="tbGoodsByGoodsId" class="com.Aishopssh.Entites.Goods">
+            <column name="GoodsID"/>
+        </many-to-one>
     </class>
 </hibernate-mapping>

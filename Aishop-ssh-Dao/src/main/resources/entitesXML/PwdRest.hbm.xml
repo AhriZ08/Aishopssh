@@ -5,9 +5,13 @@
 <hibernate-mapping>
 
     <class name="com.Aishopssh.Entites.PwdRest" table="tb_pwd_rest" schema="e_shopwebsite">
-        <id name="id" column="ID">
-            <generator class="uuid"/>
+        <id name="id" column="id">
+            <generator class="native"/>
         </id>
+        <property name="userId" column="UserID"/>
         <property name="isAccepted" column="Is_Accepted"/>
+        <many-to-one name="tbUserByUserId" class="com.Aishopssh.Entites.User">
+            <column name="UserID"/>
+        </many-to-one>
     </class>
 </hibernate-mapping>

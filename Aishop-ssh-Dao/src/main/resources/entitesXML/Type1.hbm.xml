@@ -5,9 +5,15 @@
 <hibernate-mapping>
 
     <class name="com.Aishopssh.Entites.Type1" table="tb_type_1" schema="e_shopwebsite">
-        <id name="id" column="ID">
-            <generator class="uuid"/>
+        <id name="id" column="id">
+            <generator class="native"/>
         </id>
         <property name="typeName" column="TypeName"/>
+        <set name="tbType2sById" inverse="true">
+            <key>
+                <column name="TypeID_Level_1"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.Aishopssh.Entites.Type2"/>
+        </set>
     </class>
 </hibernate-mapping>

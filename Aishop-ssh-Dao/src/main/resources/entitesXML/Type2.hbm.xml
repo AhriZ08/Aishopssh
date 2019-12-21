@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.Aishopssh.Entites.Type2" table="tb_type_2" schema="e_shopwebsite">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="typeName" column="TypeName"/>
+        <property name="typeIdLevel1" column="TypeID_Level_1"/>
+        <many-to-one name="tbType1ByTypeIdLevel1" class="com.Aishopssh.Entites.Type1">
+            <column name="TypeID_Level_1"/>
+        </many-to-one>
+        <set name="tbType3sById" inverse="true">
+            <key>
+                <column name="TypeID_Level_2"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.Aishopssh.Entites.Type3"/>
+        </set>
+    </class>
+</hibernate-mapping>
