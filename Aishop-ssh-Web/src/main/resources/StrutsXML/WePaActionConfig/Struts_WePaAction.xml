@@ -13,4 +13,15 @@
             </result>
         </action>
     </package>
+
+
+    <package name="test" namespace="/" extends="struts-default">
+        <action name="Test"
+                class="com.Aishop.Action.WelcomePageAction.TestTran" method="TestT">
+            <result name="yes" type="redirect">
+                <param name="location">/Test.jsp</param>
+                <param name="goodsList">${goodsList}</param>
+            </result>
+        </action>
+    </package>
 </struts>
