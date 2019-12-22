@@ -13,7 +13,9 @@ import java.util.List;
 @Controller
 @Scope("prototype")
 public class IndexShopList extends ActionSupport {
+
     private List<Goods> goodsList;
+
     private int idx;
     private int currpage;
 

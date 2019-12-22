@@ -28,7 +28,6 @@
                 <prop key="show_sql">true</prop>
             </props>
         </property>
-
     </bean>
 
     <context:property-placeholder location="classpath:db.properties"/>
@@ -78,4 +77,5 @@
     </bean>
 
     <tx:annotation-driven transaction-manager="transactionManager"/>
+
 </beans>

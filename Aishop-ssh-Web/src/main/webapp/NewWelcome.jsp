@@ -114,7 +114,7 @@ layui.use('element', function(){
 //取得商品信息
 function getspdata(idx){
 	$.ajax({
-		url: "${pageContext.request.contextPath}/IndexShopList?idx=" + idx,
+		url: "${pageContext.request.contextPath}/IndexShopList.action?idx=" + idx,
 		type: "get",
 		data: {"curr" : currpage},
 		async: false,

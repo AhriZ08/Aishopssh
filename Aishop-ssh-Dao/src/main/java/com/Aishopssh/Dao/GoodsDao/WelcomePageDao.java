@@ -1,9 +1,7 @@
 package com.Aishopssh.Dao.GoodsDao;
 
-import com.Aishopssh.Entites.Comments;
 import com.Aishopssh.Entites.Goods;
 import com.Aishopssh.Imp.WelcomePageImp.WelcomePageImp;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
@@ -12,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 @Repository("WelcomePageDao")
 public class WelcomePageDao extends HibernateDaoSupport implements WelcomePageImp {
@@ -36,7 +33,10 @@ public class WelcomePageDao extends HibernateDaoSupport implements WelcomePageIm
             hql = "from Goods where Goods.isRecommend = 1";
         }
         System.out.println(hql);
-        List<Goods> list = (List<Goods>) getHibernateTemplate().find(hql);
+
+        Goods g = this.getHibernateTemplate().get(Goods.class, 1);
+
+        List<Goods> list = (List<Goods>) this.getHibernateTemplate().find(hql);
         for(int i = 0; i < list.size(); i++) {
             if(i%6 == 0) {
                 f++;
