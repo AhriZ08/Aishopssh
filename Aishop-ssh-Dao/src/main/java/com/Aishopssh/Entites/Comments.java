@@ -5,8 +5,6 @@ import java.util.Objects;
 
 public class Comments implements Serializable {
     private int id;
-    private int userId;
-    private int goodsId;
     private String title;
     private String content;
     private String time;
@@ -19,22 +17,6 @@ public class Comments implements Serializable {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
-    public int getGoodsId() {
-        return goodsId;
-    }
-
-    public void setGoodsId(int goodsId) {
-        this.goodsId = goodsId;
     }
 
     public String getTitle() {
@@ -69,8 +51,7 @@ public class Comments implements Serializable {
         Comments comments = (Comments) o;
 
         if (id != comments.id) return false;
-        if (userId != comments.userId) return false;
-        if (goodsId != comments.goodsId) return false;
+
         if (!Objects.equals(title, comments.title)) return false;
         if (!Objects.equals(content, comments.content)) return false;
         return Objects.equals(time, comments.time);
@@ -79,8 +60,7 @@ public class Comments implements Serializable {
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + userId;
-        result = 31 * result + goodsId;
+
         result = 31 * result + (title != null ? title.hashCode() : 0);
         result = 31 * result + (content != null ? content.hashCode() : 0);
         result = 31 * result + (time != null ? time.hashCode() : 0);

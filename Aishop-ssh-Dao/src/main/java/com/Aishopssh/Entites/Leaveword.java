@@ -5,7 +5,6 @@ import java.util.Objects;
 
 public class Leaveword implements Serializable {
     private int id;
-    private int userId;
     private String title;
     private String content;
     private String time;
@@ -20,13 +19,6 @@ public class Leaveword implements Serializable {
         this.id = id;
     }
 
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
 
     public String getTitle() {
         return title;
@@ -68,7 +60,6 @@ public class Leaveword implements Serializable {
         Leaveword leaveword = (Leaveword) o;
 
         if (id != leaveword.id) return false;
-        if (userId != leaveword.userId) return false;
         if (isReply != leaveword.isReply) return false;
         if (!Objects.equals(title, leaveword.title)) return false;
         if (!Objects.equals(content, leaveword.content)) return false;
@@ -78,7 +69,6 @@ public class Leaveword implements Serializable {
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + userId;
         result = 31 * result + (title != null ? title.hashCode() : 0);
         result = 31 * result + (content != null ? content.hashCode() : 0);
         result = 31 * result + (time != null ? time.hashCode() : 0);

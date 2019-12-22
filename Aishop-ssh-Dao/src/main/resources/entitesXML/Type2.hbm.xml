@@ -9,7 +9,6 @@
             <generator class="native"/>
         </id>
         <property name="typeName" column="TypeName"/>
-        <property name="typeIdLevel1" column="TypeID_Level_1"/>
         <many-to-one name="tbType1ByTypeIdLevel1" class="com.Aishopssh.Entites.Type1">
             <column name="TypeID_Level_1"/>
         </many-to-one>

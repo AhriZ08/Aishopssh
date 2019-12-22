@@ -5,7 +5,6 @@ import java.util.Objects;
 
 public class PwdRest implements Serializable {
     private int id;
-    private int userId;
     private String isAccepted;
     private User tbUserByUserId;
 
@@ -15,14 +14,6 @@ public class PwdRest implements Serializable {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
     }
 
     public String getIsAccepted() {
@@ -41,14 +32,12 @@ public class PwdRest implements Serializable {
         PwdRest pwdRest = (PwdRest) o;
 
         if (id != pwdRest.id) return false;
-        if (userId != pwdRest.userId) return false;
         return Objects.equals(isAccepted, pwdRest.isAccepted);
     }
 
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + userId;
         result = 31 * result + (isAccepted != null ? isAccepted.hashCode() : 0);
         return result;
     }

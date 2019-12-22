@@ -8,8 +8,6 @@
         <id name="id" column="id">
             <generator class="native"/>
         </id>
-        <property name="goodsId" column="GoodsID"/>
-        <property name="userId" column="UserID"/>
         <property name="goodsNum" column="GoodsNum"/>
         <property name="goodsAddTime" column="GoodsAddTime"/>
         <property name="orderNum" column="OrderNum"/>

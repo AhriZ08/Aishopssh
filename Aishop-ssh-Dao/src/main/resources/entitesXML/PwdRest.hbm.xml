@@ -8,7 +8,6 @@
         <id name="id" column="id">
             <generator class="native"/>
         </id>
-        <property name="userId" column="UserID"/>
         <property name="isAccepted" column="Is_Accepted"/>
         <many-to-one name="tbUserByUserId" class="com.Aishopssh.Entites.User">
             <column name="UserID"/>

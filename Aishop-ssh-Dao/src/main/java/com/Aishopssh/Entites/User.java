@@ -2,6 +2,7 @@ package com.Aishopssh.Entites;
 
 import java.util.Collection;
 import java.util.Objects;
+import java.util.Set;
 
 public class User {
     private int id;
@@ -21,11 +22,11 @@ public class User {
     private int loginTime;
     private String trueName;
     private String comfirmPwd;
-    private Collection<AdminReply> tbAdminRepliesById;
-    private Collection<Cartlist> tbCartlistsById;
-    private Collection<Comments> tbCommentsById;
-    private Collection<Leaveword> tbLeavewordsById;
-    private Collection<PwdRest> tbPwdRestsById;
+    private Set<AdminReply> tbAdminRepliesById;
+    private Set<Cartlist> tbCartlistsById;
+    private Set<Comments> tbCommentsById;
+    private Set<Leaveword> tbLeavewordsById;
+    private Set<PwdRest> tbPwdRestsById;
 
     public int getId() {
         return id;
@@ -214,43 +215,43 @@ public class User {
         return result;
     }
 
-    public Collection<AdminReply> getTbAdminRepliesById() {
+    public Set<AdminReply> getTbAdminRepliesById() {
         return tbAdminRepliesById;
     }
 
-    public void setTbAdminRepliesById(Collection<AdminReply> tbAdminRepliesById) {
+    public void setTbAdminRepliesById(Set<AdminReply> tbAdminRepliesById) {
         this.tbAdminRepliesById = tbAdminRepliesById;
     }
 
-    public Collection<Cartlist> getTbCartlistsById() {
+    public Set<Cartlist> getTbCartlistsById() {
         return tbCartlistsById;
     }
 
-    public void setTbCartlistsById(Collection<Cartlist> tbCartlistsById) {
+    public void setTbCartlistsById(Set<Cartlist> tbCartlistsById) {
         this.tbCartlistsById = tbCartlistsById;
     }
 
-    public Collection<Comments> getTbCommentsById() {
+    public Set<Comments> getTbCommentsById() {
         return tbCommentsById;
     }
 
-    public void setTbCommentsById(Collection<Comments> tbCommentsById) {
+    public void setTbCommentsById(Set<Comments> tbCommentsById) {
         this.tbCommentsById = tbCommentsById;
     }
 
-    public Collection<Leaveword> getTbLeavewordsById() {
+    public Set<Leaveword> getTbLeavewordsById() {
         return tbLeavewordsById;
     }
 
-    public void setTbLeavewordsById(Collection<Leaveword> tbLeavewordsById) {
+    public void setTbLeavewordsById(Set<Leaveword> tbLeavewordsById) {
         this.tbLeavewordsById = tbLeavewordsById;
     }
 
-    public Collection<PwdRest> getTbPwdRestsById() {
+    public Set<PwdRest> getTbPwdRestsById() {
         return tbPwdRestsById;
     }
 
-    public void setTbPwdRestsById(Collection<PwdRest> tbPwdRestsById) {
+    public void setTbPwdRestsById(Set<PwdRest> tbPwdRestsById) {
         this.tbPwdRestsById = tbPwdRestsById;
     }
 }

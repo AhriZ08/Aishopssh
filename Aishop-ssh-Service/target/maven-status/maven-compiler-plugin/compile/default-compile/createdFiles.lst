@@ -1,0 +1,6 @@
+com\Aishopssh\Service\GoodsService.class
+com\Aishopssh\Imp\UserServiceImp.class
+com\Aishopssh\Imp\GoodsServiceImp.class
+com\Aishopssh\Service\ManagerService.class
+com\Aishopssh\Imp\ManagerServiceImp.class
+com\Aishopssh\Service\UserService.class

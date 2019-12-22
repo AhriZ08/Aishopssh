@@ -20,6 +20,6 @@
     <!-- 是否开启动态方法调用,使用叹号访问方法 -->
     <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
 
-
+    <include file="StrutsXML/WePaActionConfig/Struts_WePaAction.xml"/>
 
 </struts>

@@ -1,9 +1,10 @@
 package com.Aishopssh.Entites;
 
-import java.util.Collection;
-import java.util.Objects;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
-public class Goods {
+public class Goods implements Serializable {
     private int id;
     private String name;
     private String introduction;
@@ -15,14 +16,16 @@ public class Goods {
     private int purchaseTime;
     private int isRecommend;
     private int typeIdLevel1;
-    private Integer typeIdLevel2;
-    private Integer typeIdLevel3;
+    private int typeIdLevel2;
+    private int typeIdLevel3;
     private String memberPrice;
     private String marketPirce;
     private String brand;
-    private Integer isSpecialPrice;
-    private Collection<Cartlist> tbCartlistsById;
-    private Collection<Comments> tbCommentsById;
+    private int isSpecialPrice;
+    private Set<Cartlist> tbCartlistsById = new HashSet<>();
+    private Set<Comments> tbCommentsById = new HashSet<>();
+
+    public Goods(){ }
 
     public int getId() {
         return id;
@@ -152,75 +155,27 @@ public class Goods {
         this.brand = brand;
     }
 
-    public Integer getIsSpecialPrice() {
+    public int getIsSpecialPrice() {
         return isSpecialPrice;
     }
 
-    public void setIsSpecialPrice(Integer isSpecialPrice) {
+    public void setIsSpecialPrice(int isSpecialPrice) {
         this.isSpecialPrice = isSpecialPrice;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Goods goods = (Goods) o;
-
-        if (id != goods.id) return false;
-        if (num != goods.num) return false;
-        if (purchaseTime != goods.purchaseTime) return false;
-        if (isRecommend != goods.isRecommend) return false;
-        if (typeIdLevel1 != goods.typeIdLevel1) return false;
-        if (!Objects.equals(name, goods.name)) return false;
-        if (!Objects.equals(introduction, goods.introduction)) return false;
-        if (!Objects.equals(addtime, goods.addtime)) return false;
-        if (!Objects.equals(level, goods.level)) return false;
-        if (!Objects.equals(model, goods.model)) return false;
-        if (!Objects.equals(picture, goods.picture)) return false;
-        if (!Objects.equals(typeIdLevel2, goods.typeIdLevel2)) return false;
-        if (!Objects.equals(typeIdLevel3, goods.typeIdLevel3)) return false;
-        if (!Objects.equals(memberPrice, goods.memberPrice)) return false;
-        if (!Objects.equals(marketPirce, goods.marketPirce)) return false;
-        if (!Objects.equals(brand, goods.brand)) return false;
-        return Objects.equals(isSpecialPrice, goods.isSpecialPrice);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (introduction != null ? introduction.hashCode() : 0);
-        result = 31 * result + (addtime != null ? addtime.hashCode() : 0);
-        result = 31 * result + (level != null ? level.hashCode() : 0);
-        result = 31 * result + (model != null ? model.hashCode() : 0);
-        result = 31 * result + (picture != null ? picture.hashCode() : 0);
-        result = 31 * result + num;
-        result = 31 * result + purchaseTime;
-        result = 31 * result + isRecommend;
-        result = 31 * result + typeIdLevel1;
-        result = 31 * result + (typeIdLevel2 != null ? typeIdLevel2.hashCode() : 0);
-        result = 31 * result + (typeIdLevel3 != null ? typeIdLevel3.hashCode() : 0);
-        result = 31 * result + (memberPrice != null ? memberPrice.hashCode() : 0);
-        result = 31 * result + (marketPirce != null ? marketPirce.hashCode() : 0);
-        result = 31 * result + (brand != null ? brand.hashCode() : 0);
-        result = 31 * result + (isSpecialPrice != null ? isSpecialPrice.hashCode() : 0);
-        return result;
-    }
-
-    public Collection<Cartlist> getTbCartlistsById() {
+    public Set<Cartlist> getTbCartlistsById() {
         return tbCartlistsById;
     }
 
-    public void setTbCartlistsById(Collection<Cartlist> tbCartlistsById) {
+    public void setTbCartlistsById(Set<Cartlist> tbCartlistsById) {
         this.tbCartlistsById = tbCartlistsById;
     }
 
-    public Collection<Comments> getTbCommentsById() {
+    public Set<Comments> getTbCommentsById() {
         return tbCommentsById;
     }
 
-    public void setTbCommentsById(Collection<Comments> tbCommentsById) {
+    public void setTbCommentsById(Set<Comments> tbCommentsById) {
         this.tbCommentsById = tbCommentsById;
     }
 }

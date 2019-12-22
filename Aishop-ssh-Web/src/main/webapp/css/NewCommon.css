@@ -1,0 +1,21 @@
+.NoMagPad{
+	margin:0px;
+	padding:0px;
+}
+.NoStyle_a{
+	text-decoration:none;
+}
+body,html{
+	margin:0px;
+	padding:0px;
+	overflow:-Scroll;
+	overflow-x:hidden;		
+}
+ul li{
+	list-style-type:none;
+}
+.main{
+	width:1519px;
+	height:1900px;
+	position:relative;
+}

@@ -8,6 +8,7 @@
 
     <!-- 配置hibernate属性，把hibernate核心配置交给spring -->
     <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="configLocation" value="classpath:hibernate.cfg.xml"/>
         <!-- 注入连接池 ，是druid连接池-->
         <property name="dataSource" ref="druidDataSource"/>
         <!-- 配置其他属性 -->
@@ -76,6 +77,5 @@
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
-    <!-- 事务注解开发 -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
 </beans>

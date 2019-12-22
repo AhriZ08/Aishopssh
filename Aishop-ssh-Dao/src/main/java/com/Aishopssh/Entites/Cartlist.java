@@ -5,8 +5,6 @@ import java.util.Objects;
 
 public class Cartlist implements Serializable {
     private int id;
-    private int goodsId;
-    private int userId;
     private int goodsNum;
     private String goodsAddTime;
     private String orderNum;
@@ -21,21 +19,6 @@ public class Cartlist implements Serializable {
         this.id = id;
     }
 
-    public int getGoodsId() {
-        return goodsId;
-    }
-
-    public void setGoodsId(int goodsId) {
-        this.goodsId = goodsId;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
 
     public int getGoodsNum() {
         return goodsNum;
@@ -69,8 +52,7 @@ public class Cartlist implements Serializable {
         Cartlist cartlist = (Cartlist) o;
 
         if (id != cartlist.id) return false;
-        if (goodsId != cartlist.goodsId) return false;
-        if (userId != cartlist.userId) return false;
+
         if (goodsNum != cartlist.goodsNum) return false;
         if (!Objects.equals(goodsAddTime, cartlist.goodsAddTime))
             return false;
@@ -80,8 +62,6 @@ public class Cartlist implements Serializable {
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + goodsId;
-        result = 31 * result + userId;
         result = 31 * result + goodsNum;
         result = 31 * result + (goodsAddTime != null ? goodsAddTime.hashCode() : 0);
         result = 31 * result + (orderNum != null ? orderNum.hashCode() : 0);

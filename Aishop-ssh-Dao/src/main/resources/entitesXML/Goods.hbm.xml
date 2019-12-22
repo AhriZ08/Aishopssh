@@ -24,17 +24,18 @@
         <property name="marketPirce" column="MarketPirce"/>
         <property name="brand" column="Brand"/>
         <property name="isSpecialPrice" column="Is_SpecialPrice"/>
+
         <set name="tbCartlistsById" inverse="true">
             <key>
                 <column name="GoodsID"/>
             </key>
             <one-to-many not-found="ignore" class="com.Aishopssh.Entites.Cartlist"/>
         </set>
-        <set name="tbCommentsById" inverse="true">
-            <key>
-                <column name="GoodsID"/>
-            </key>
+
+        <set name="tbCommentsById" inverse="true" table="tb_comments">
+            <key column="GoodsID"/>
             <one-to-many not-found="ignore" class="com.Aishopssh.Entites.Comments"/>
         </set>
+
     </class>
 </hibernate-mapping>
