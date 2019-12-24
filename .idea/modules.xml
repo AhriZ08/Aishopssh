@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aishop-ssh.iml" filepath="$PROJECT_DIR$/Aishop-ssh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aishop-ssh-Dao/Aishop-ssh-Dao.iml" filepath="$PROJECT_DIR$/Aishop-ssh-Dao/Aishop-ssh-Dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aishop-ssh-Service/Aishop-ssh-Service.iml" filepath="$PROJECT_DIR$/Aishop-ssh-Service/Aishop-ssh-Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aishop-ssh-Web/Aishop-ssh-Web.iml" filepath="$PROJECT_DIR$/Aishop-ssh-Web/Aishop-ssh-Web.iml" />
+    </modules>
+  </component>
+</project>

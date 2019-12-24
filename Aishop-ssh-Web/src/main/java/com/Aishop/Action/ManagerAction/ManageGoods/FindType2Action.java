@@ -24,7 +24,7 @@ public class FindType2Action extends ActionSupport implements ServletRequestAwar
 
     @Autowired
     @Qualifier("ManageGoodsDao")
-    ManageGoodsDaoImp beanDB;
+    private ManageGoodsDaoImp beanDB;
 
     public String FindType2() throws IOException {
         int type1id = Integer.parseInt(request.getParameter("type1id"));
@@ -34,7 +34,7 @@ public class FindType2Action extends ActionSupport implements ServletRequestAwar
         int type2count = type2list.size();
         for (int i = 0; i < type2count; i++) {
             Type2 type2 = type2list.get(i);
-            if (type2.getId() == type1id) {
+            if (type2.getTbType1ByTypeIdLevel1().getId() == type1id) {
                 str += JSON.toJSONString(type2);
                 str += ",";
             }
@@ -42,6 +42,7 @@ public class FindType2Action extends ActionSupport implements ServletRequestAwar
         str = str.substring(0, str.length() - 1);
         str += "]";
         response.getWriter().write(str);
+
         return "success";
     }
 

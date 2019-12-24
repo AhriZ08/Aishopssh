@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="GoodsAction" extends="struts-default">
+        <action name="GoodsListAction" class="com.Aishop.Action.ManagerAction.ManageGoods.GoodsListAction" method="GetAllGoods">
+            <result name="success" type="redirect">/Manager/Goods_List.jsp</result>
+        </action>
+        <action name="GoodsGetAction" class="com.Aishop.Action.ManagerAction.ManageGoods.GoodsGetAction" method="GetGoods">
+            <result name="success" type="redirect">/Manager/Goods_Edit.jsp</result>
+        </action>
+        <action name="GoodsDeleteAction" class="com.Aishop.Action.ManagerAction.ManageGoods.GoodsDeleteAction" method="DeleteGoods">
+            <result name="success" type="redirectAction">GoodsListAction</result>
+        </action>
+        <action name="FindType2" class="com.Aishop.Action.ManagerAction.ManageGoods.FindType2Action" method="FindType2">
+        </action>
+        <action name="FindType3" class="com.Aishop.Action.ManagerAction.ManageGoods.FindType3Action" method="FindType3">
+        </action>
+        <action name="Upload" class="com.Aishop.Action.ManagerAction.ManageGoods.UploadAction" method="UploadPic">
+        </action>
+        <action name="UpDateGoods" class="com.Aishop.Action.ManagerAction.ManageGoods.GoodsUpdateAction" method="GoodsUpdate">
+            <result name="success" type="redirectAction">GoodsListAction</result>
+        </action>
+        <action name="InsertGoods" class="com.Aishop.Action.ManagerAction.ManageGoods.GoodsInsertAction" method="GoodsInsert">
+            <result name="success" type="redirectAction">GoodsListAction</result>
+        </action>
+    </package>
+
+    <package name="UserAction" extends="struts-default">
+        <action name="UserListAction" class="com.Aishop.Action.ManagerAction.ManageUser.UserListAction" method="GetAllUser">
+            <result name="success" type="redirect">/Manager/User_List.jsp</result>
+        </action>
+        <action name="UserFreezeAction" class="com.Aishop.Action.ManagerAction.ManageUser.UsersFreezeAction" method="UpdateUser">
+        </action>
+        <action name="UserDeleteAction" class="com.Aishop.Action.ManagerAction.ManageUser.UsersDeleteAction" method="DeleteUser">
+            <result name="success" type="redirectAction">UserListAction</result>
+        </action>
+    </package>
+
+    <package name="SelfAction" extends="struts-default">
+        <action name="MgrListAction" class="com.Aishop.Action.ManagerAction.ManageSelf.ManagerSelfGetAction" method="GetManager">
+            <result name="success" type="redirect">/Manager/Manager_Edit.jsp</result>
+        </action>
+        <action name="MgrUpdateAction" class="com.Aishop.Action.ManagerAction.ManageSelf.ManagerSelfUpdateAction" method="UpdateManager">
+            <result name="success" type="redirectAction">ManagerSelfGetAction</result>
+        </action>
+    </package>
+</struts>
