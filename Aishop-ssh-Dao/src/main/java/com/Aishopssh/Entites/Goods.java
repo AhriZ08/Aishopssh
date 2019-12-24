@@ -15,9 +15,31 @@ public class Goods implements Serializable {
     private int num;
     private int purchaseTime;
     private int isRecommend;
+    private Type1 type1;
+    private Type2 type2;
+    private Type3 type3;
+    public Type1 getType1() {
+        return type1;
+    }
+    public void setType1(Type1 type1) {
+        this.type1 = type1;
+    }
+    public Type2 getType2() {
+        return type2;
+    }
+    public void setType2(Type2 type2) {
+        this.type2 = type2;
+    }
+    public Type3 getType3() {
+        return type3;
+    }
+    public void setType3(Type3 type3) {
+        this.type3 = type3;
+    }
     private int typeIdLevel1;
     private int typeIdLevel2;
     private int typeIdLevel3;
+
     private String memberPrice;
     private String marketPirce;
     private String brand;

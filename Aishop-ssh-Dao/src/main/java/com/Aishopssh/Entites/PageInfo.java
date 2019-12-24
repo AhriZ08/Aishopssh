@@ -1,8 +1,10 @@
 package com.Aishopssh.Entites;
 
-public class PageInfo <T>{
+import java.io.Serializable;
+
+public class PageInfo <T> implements Serializable {
     private int total;
-    T data;
+    private T data;
     public int getTotal() {
         return total;
     }
