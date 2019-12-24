@@ -17,9 +17,6 @@
         <property name="num" column="Num"/>
         <property name="purchaseTime" column="PurchaseTime"/>
         <property name="isRecommend" column="Is_Recommend"/>
-        <property name="typeIdLevel1" column="TypeID_Level_1"/>
-        <property name="typeIdLevel2" column="TypeID_Level_2"/>
-        <property name="typeIdLevel3" column="TypeID_Level_3"/>
         <property name="memberPrice" column="MemberPrice"/>
         <property name="marketPirce" column="MarketPirce"/>
         <property name="brand" column="Brand"/>

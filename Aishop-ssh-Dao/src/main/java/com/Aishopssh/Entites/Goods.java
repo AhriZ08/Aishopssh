@@ -36,9 +36,6 @@ public class Goods implements Serializable {
     public void setType3(Type3 type3) {
         this.type3 = type3;
     }
-    private int typeIdLevel1;
-    private int typeIdLevel2;
-    private int typeIdLevel3;
 
     private String memberPrice;
     private String marketPirce;
@@ -127,30 +124,6 @@ public class Goods implements Serializable {
 
     public void setIsRecommend(int isRecommend) {
         this.isRecommend = isRecommend;
-    }
-
-    public int getTypeIdLevel1() {
-        return typeIdLevel1;
-    }
-
-    public void setTypeIdLevel1(int typeIdLevel1) {
-        this.typeIdLevel1 = typeIdLevel1;
-    }
-
-    public Integer getTypeIdLevel2() {
-        return typeIdLevel2;
-    }
-
-    public void setTypeIdLevel2(Integer typeIdLevel2) {
-        this.typeIdLevel2 = typeIdLevel2;
-    }
-
-    public Integer getTypeIdLevel3() {
-        return typeIdLevel3;
-    }
-
-    public void setTypeIdLevel3(Integer typeIdLevel3) {
-        this.typeIdLevel3 = typeIdLevel3;
     }
 
     public String getMemberPrice() {
