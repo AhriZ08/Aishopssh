@@ -45,7 +45,7 @@
             <result name="success" type="redirect">/Manager/Manager_Edit.jsp</result>
         </action>
         <action name="MgrUpdateAction" class="com.Aishop.Action.ManagerAction.ManageSelf.ManagerSelfUpdateAction" method="UpdateManager">
-            <result name="success" type="redirectAction">ManagerSelfGetAction</result>
+            <result name="success" type="redirectAction">MgrListAction</result>
         </action>
     </package>
 </struts>
