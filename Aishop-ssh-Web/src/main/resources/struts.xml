@@ -21,5 +21,5 @@
     <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
 
     <include file="StrutsXML/WePaActionConfig/Struts_WePaAction.xml"/>
-
+    <include file="StrutsXML/ManagerActionConfig/ManagerActionConfig.xml"/>
 </struts>

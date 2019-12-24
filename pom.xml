@@ -151,6 +151,7 @@
             <version>1.2.62</version>
         </dependency>
 
+
         <!-- java9以上配置hibernate出现错误，需要导入的包
         <dependency>
             <groupId>javax.xml.bind</groupId>
@@ -173,4 +174,17 @@
             <version>1.1.1</version>
         </dependency>-->
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

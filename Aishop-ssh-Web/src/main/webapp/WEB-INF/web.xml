@@ -5,6 +5,7 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <!-- 配置spring监听启动的配置文件 -->
+
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath*:applicationContext_*.xml</param-value>
@@ -80,5 +81,7 @@
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
-
+  <welcome-file-list>
+    <welcome-file>/NewWelcome.jsp</welcome-file>
+  </welcome-file-list>
 </web-app>

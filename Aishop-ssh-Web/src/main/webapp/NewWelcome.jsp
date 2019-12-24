@@ -2,6 +2,7 @@
     pageEncoding="utf-8"%>
 <%@ page import="java.util.*,com.Aishopssh.Entites.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>

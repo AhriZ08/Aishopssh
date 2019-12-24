@@ -1,6 +1,10 @@
-F:\IdeaWorkspace\Aishopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Service\ManagerService.java
-F:\IdeaWorkspace\Aishopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Imp\GoodsServiceImp.java
-F:\IdeaWorkspace\Aishopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Imp\ManagerServiceImp.java
-F:\IdeaWorkspace\Aishopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Imp\UserServiceImp.java
-F:\IdeaWorkspace\Aishopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Service\GoodsService.java
-F:\IdeaWorkspace\Aishopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Service\UserService.java
+F:\IdeaWorkspace\J2EE\Aisopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Imp\ManagerServiceImp\ManageSelfServiceImp.java
+F:\IdeaWorkspace\J2EE\Aisopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Imp\GoodsServiceImp.java
+F:\IdeaWorkspace\J2EE\Aisopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Imp\ManagerServiceImp\ManageGoodsServiceImp.java
+F:\IdeaWorkspace\J2EE\Aisopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Imp\ManagerServiceImp\ManageUserServiceImp.java
+F:\IdeaWorkspace\J2EE\Aisopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Service\GoodsService.java
+F:\IdeaWorkspace\J2EE\Aisopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Service\ManagerService\ManageGoodsService.java
+F:\IdeaWorkspace\J2EE\Aisopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Imp\UserServiceImp.java
+F:\IdeaWorkspace\J2EE\Aisopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Service\UserService.java
+F:\IdeaWorkspace\J2EE\Aisopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Service\ManagerService\ManageSelfService.java
+F:\IdeaWorkspace\J2EE\Aisopssh\Aishop-ssh-Service\src\main\java\com\Aishopssh\Service\ManagerService\ManageUserService.java
