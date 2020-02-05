@@ -10,7 +10,8 @@
 </head>
 <%
 	String path = request.getContextPath();
-	Admin manager = (Admin) session.getAttribute("mgr");
+	List<Admin> adminList = (List<Admin>) session.getAttribute("mgr");
+	Admin manager = adminList.get(0);
 	session.removeAttribute("mgr");
 %>
 <link rel="stylesheet" type="text/css" href="<%=path %>/css/Manager.css">

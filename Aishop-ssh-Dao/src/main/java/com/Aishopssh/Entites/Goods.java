@@ -41,8 +41,6 @@ public class Goods implements Serializable {
     private String marketPirce;
     private String brand;
     private int isSpecialPrice;
-    private Set<Cartlist> tbCartlistsById = new HashSet<>();
-    private Set<Comments> tbCommentsById = new HashSet<>();
 
     public Goods(){ }
 
@@ -158,19 +156,4 @@ public class Goods implements Serializable {
         this.isSpecialPrice = isSpecialPrice;
     }
 
-    public Set<Cartlist> getTbCartlistsById() {
-        return tbCartlistsById;
-    }
-
-    public void setTbCartlistsById(Set<Cartlist> tbCartlistsById) {
-        this.tbCartlistsById = tbCartlistsById;
-    }
-
-    public Set<Comments> getTbCommentsById() {
-        return tbCommentsById;
-    }
-
-    public void setTbCommentsById(Set<Comments> tbCommentsById) {
-        this.tbCommentsById = tbCommentsById;
-    }
 }

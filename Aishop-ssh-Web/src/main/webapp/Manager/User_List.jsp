@@ -13,30 +13,31 @@
 	String path = request.getContextPath();
 	List<User> reclist = (List<User>)session.getAttribute("users");
 	session.removeAttribute("users");
-	ManageUserDao beanDB = new ManageUserDao();
 %>
 <link rel="stylesheet" type="text/css" href="<%=path %>/css/Manager.css">
 <link rel="stylesheet" type="text/css" href="<%=path%>/layui/css/layui.css">
 <script type="text/javascript" src="<%=path %>/js/datacheck.js"></script>
 <script src="<%=path %>/js/jquery.js"></script>
 <script>
-	function Dongjie(id){
+	function Dongjie(id, i){
 		$.ajax({
 			url:'<%=path%>/UsersFreezeAction.action?id=' + id
 			,dataType:'text'
 			,type:'get'
 			,cache:false
 			,success:function(){
-				var zhuangtai = $("#zhuangtai").html();
-				$("#zhuangtai").html("");
-				$("#dongjie").html("");
+				var currCow = "#zhuangtai"+i;
+				var currDong = "#dongjie"+i;
+				var zhuangtai = $(currCow).html();
+				$(currCow).html("");
+				$(currDong).html("");
 				if (zhuangtai == "正常") {
-					$("#zhuangtai").html("冻结");
-					$("#dongjie").html("解冻");
+					$(currCow).html("冻结");
+					$(currDong).html("解冻");
 				}
 				else if (zhuangtai == "冻结") {
-					$("#zhuangtai").html("正常");
-					$("#dongjie").html("冻结");
+					$(currCow).html("正常");
+					$(currDong).html("冻结");
 				}
 			}
 			,error: function(XMLHttpRequest, textStatus, errorThrown){
@@ -70,8 +71,8 @@
 					<label class="td_header_pwd">用户密码：</label>
 					<label class="td_pwd"><%=user.getPwd()%></label>
 					<label class="td_header_zhuangtai">用户状态：</label>
-					<label class="td_zhuangtai" id="zhuangtai"><%=dongjie%></label>
-					<button type="button" onclick="Dongjie(<%=user.getId()%>);" class="layui-btn layui-btn-normal" id="dongjie"><%=caozuo%></button>
+					<label class="td_zhuangtai" id="zhuangtai<%=i%>"><%=dongjie%></label>
+					<button type="button" onclick="Dongjie(<%=user.getId()%>,<%=i%>);" class="layui-btn layui-btn-normal" id="dongjie<%=i%>"><%=caozuo%></button>
 				</div>
 				<div>
 					<label class="td_header_truename">真实姓名：</label>

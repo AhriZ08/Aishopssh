@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.Aishopssh.Entites.AdminReply" table="tb_admin_reply" schema="e_shopwebsite">
+    <class name="com.Aishopssh.Entites.AdminReply" table="tb_admin_reply" schema="e_shopwebsitessh">
         <id name="id" column="id">
             <generator class="native"/>
         </id>
@@ -13,7 +13,7 @@
         <property name="content" column="Content"/>
         <property name="replyTime" column="ReplyTime"/>
         <property name="isRead" column="Is_Read"/>
-        <many-to-one name="tbUserByUserId" class="com.Aishopssh.Entites.User">
+        <many-to-one name="tbUserByUserId" class="com.Aishopssh.Entites.User" lazy="false">
             <column name="UserID"/>
         </many-to-one>
     </class>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="Cartlist" extends="struts-default" namespace="/">
+        <action name="ModCartSpNum" class="com.Aishop.Action.GoodsAction.CartlistManage.ModCartSpNum" method="modCartSpNum">
+        </action>
+    </package>
+
+    <package name="delAllcart" extends="struts-default" namespace="/">
+        <action name="DelAllCart" class="com.Aishop.Action.GoodsAction.CartlistManage.DelAllCart" method="delAllCart">
+        </action>
+    </package>
+
+    <package name="CartlistAction" extends="struts-default" namespace="/">
+        <action name="CartlistAction" class="com.Aishop.Action.GoodsAction.CartlistManage.CartlistAction" method="cartlistAction">
+            <result name="success" type="redirect">/cart/cartlist.jsp</result>
+        </action>
+        <action name="carlistdelone" class="com.Aishop.Action.GoodsAction.CartlistManage.CartListDelone" method="cartlistdelone">
+
+        </action>
+    </package>
+
+    <package name="GetAllOrder" extends="struts-default" namespace="/">
+        <action name="GetAllorder" class="com.Aishop.Action.GoodsAction.CartlistManage.GetAllorder" method="Getallorder">
+            <result name="success" type="redirect">/SeeOrder/seeorder.jsp</result>
+        </action>
+    </package>
+
+    <package name="ModcartSpNum" extends="struts-default" namespace="/">
+        <action name="ModCartSpNum" class="com.Aishop.Action.GoodsAction.CartlistManage.ModCartSpNum" method="modCartSpNum">
+        </action>
+    </package>
+
+
+    <package name="Getoneorderdetail" extends="struts-default" namespace="/">
+        <action name="Getoneorderdetail" class="com.Aishop.Action.GoodsAction.CartlistManage.Getoneorderdetail" method="GetOneOrderdetail">
+        </action>
+    </package>
+
+
+    <package name="AddOrder" extends="struts-default" namespace="/">
+        <action name="AddOrder" class="com.Aishop.Action.GoodsAction.CartlistManage.AddOrder" method="addOrder">
+        </action>
+    </package>
+</struts>

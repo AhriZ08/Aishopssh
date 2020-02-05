@@ -21,5 +21,20 @@
     <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
 
     <include file="StrutsXML/WePaActionConfig/Struts_WePaAction.xml"/>
+
     <include file="StrutsXML/ManagerActionConfig/ManagerActionConfig.xml"/>
+
+    <include file="StrutsXML/GoodsActionConfig/Struts_GoodsSearch.xml"/>
+    <include file="StrutsXML/GoodsActionConfig/Struts_GoodsComments.xml"/>
+    <include file="StrutsXML/GoodsActionConfig/Struts_CartlistManage.xml"/>
+
+    <include file="StrutsXML/OrderActionConfig/Order.xml"/>
+
+    <include file="StrutsXML/UserActionConifg/Struts_getsecurityquestion.xml"/>
+    <include file="StrutsXML/UserActionConifg/Struts_userinsert.xml"/>
+    <include file="StrutsXML/UserActionConifg/Struts_userlogin.xml"/>
+    <include file="StrutsXML/UserActionConifg/Struts_username.xml"/>
+    <include file="StrutsXML/UserActionConifg/Struts_userupdate.xml"/>
+    <include file="StrutsXML/UserActionConifg/Struts_userannouncement.xml"/>
+
 </struts>

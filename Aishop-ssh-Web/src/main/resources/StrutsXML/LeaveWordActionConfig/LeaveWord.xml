@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="com.Aishop.Action.LeaveWordAction" extends="struts-default" namespace="/">
+        <action name="getAllLeaveWord" class="com.Aishop.Action.LeaveWordAction.LeaveWord" method="getAll">
+            <result name="success" type="redirect">/leaveWord/leaveword_list.jsp</result>
+        </action>
+        <action name="getLeaveWordById" class="com.Aishop.Action.LeaveWordAction.LeaveWord" method="getBylId">
+            <result name="success" type="redirect">/leaveWord/leaveword_Details.jsp</result>
+        </action>
+    </package>
+</struts>

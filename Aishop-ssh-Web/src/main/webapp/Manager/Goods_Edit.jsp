@@ -1,9 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="" %>
 <%@ page import="com.Aishopssh.Entites.Goods" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.Aishopssh.Dao.ManagerDao.ManageGoodsDao" %>
 <%@ page import="com.Aishopssh.Entites.Type1" %>
 <%@ page import="com.Aishopssh.Entites.Type2" %>
 <%@ page import="com.Aishopssh.Entites.Type3" %>
@@ -17,17 +15,16 @@
 <%
 	String path = request.getContextPath();
 	Goods reclist = (Goods)session.getAttribute("good");
+	List<Type1> type1list = (List<Type1>)session.getAttribute("type1");
+
+	List<Type1> Type1 = (List<Type1>)session.getAttribute("Type1");
+	List<Type2> Type2 = (List<Type2>)session.getAttribute("Type2");
+	List<Type3> Type3 = (List<Type3>)session.getAttribute("Type3");
 	session.removeAttribute("good");
-	ManageGoodsDao beanDB = new ManageGoodsDao();
-	List<Type1> type1list;
-	List<Type2> type2list;
-	List<Type3> type3list;
-	type1list = beanDB.GetAllType1();
-	type2list = beanDB.GetAllType2();
-	type3list = beanDB.GetAllType3();
-	List<Type1> Type1 = beanDB.GetType1(reclist.getTypeIdLevel1());
-	List<Type2> Type2 = beanDB.GetType2(reclist.getTypeIdLevel2());
-	List<Type3> Type3 = beanDB.GetType3(reclist.getTypeIdLevel3());
+	session.removeAttribute("type1");
+	session.removeAttribute("Type1");
+	session.removeAttribute("Type2");
+	session.removeAttribute("Type3");
 %>
 <link rel="stylesheet" type="text/css" href="<%=path %>/css/Manager.css">
 <script type="text/javascript" src="<%=path %>/js/datacheck.js"></script>
@@ -52,7 +49,7 @@
 					$("#Type2").html("");
 					ss += '<option value="" selected>请选择一个类别</option>';
 					$.each(data, function(i, list){
-						ss += '<option value="' + list.id + '">' + list.typename + '</option>';
+						ss += '<option value="' + list.id + '">' + list.typeName + '</option>';
 					});
 				$("#Type2").html(ss);
 				layui.form.render();
@@ -70,7 +67,7 @@
 					$("#Type3").html("");
 					ss += '<option value="" selected>请选择一个类别</option>';
 					$.each(data, function(i, list){
-						ss += '<option value="' + list.id + '">' + list.typename + '</option>';
+						ss += '<option value="' + list.id + '">' + list.typeName + '</option>';
 					});
 				$("#Type3").html(ss);
 				layui.form.render();
@@ -161,7 +158,7 @@
 			        	for (int i = 0; i < type1count; i++) {
 			        		Type1 Retype1 = type1list.get(i);%>
 			        		<option value="<%=Retype1.getId()%>"<%
-			        			if (goods.getTypeIdLevel1() == Retype1.getId()) {%>
+			        			if (goods.getType1().getId() == Retype1.getId()) {%>
 			        				selected="selected"
 			        			<%}
 			        		%>><%=Retype1.getTypeName()%></option>

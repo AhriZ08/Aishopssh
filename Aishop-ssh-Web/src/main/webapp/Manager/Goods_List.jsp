@@ -9,19 +9,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
 </head>
 <%
 	String path = request.getContextPath();
 	List<Goods> reclist = (List<Goods>)session.getAttribute("goods");
+	List<Type1> type1list = (List<Type1>)session.getAttribute("type1");
+	List<Type2> type2list = (List<Type2>)session.getAttribute("type2");
+	List<Type3> type3list = (List<Type3>)session.getAttribute("type3");
 	session.removeAttribute("goods");
-	ManageGoodsDao beanDB = new ManageGoodsDao();
-	List<Type1> type1list = beanDB.GetAllType1();
-	List<Type2> type2list = beanDB.GetAllType2();
-	List<Type3> type3list = beanDB.GetAllType3();
+	session.removeAttribute("type1");
+	session.removeAttribute("type2");
+	session.removeAttribute("type3");
 %>
-${goods[0].getName()}
 <link rel="stylesheet" type="text/css" href="<%=path %>/css/Manager.css">
 <link rel="stylesheet" type="text/css" href="<%=path%>/layui/css/layui.css">
 <script type="text/javascript" src="<%=path %>/js/datacheck.js"></script>
@@ -42,21 +43,21 @@ ${goods[0].getName()}
 
 			for (int j = 0; j < type1count; j++) {
 				Type1 Type1 = type1list.get(j);
-				if (goods.getTypeIdLevel1() == Type1.getId()) {
+				if (goods.getType1().getId() == Type1.getId()) {
 					type1 = Type1.getTypeName();
 				}
 			}
 
 			for (int j = 0; j < type2count; j++) {
 				Type2 Type2 = type2list.get(j);
-				if (goods.getTypeIdLevel2() == Type2.getId()) {
+				if (goods.getType2().getId() == Type2.getId()) {
 					type2 = Type2.getTypeName();
 				}
 			}
 
 			for (int j = 0; j < type3count; j++) {
 				Type3 Type3 = type3list.get(j);
-				if (goods.getTypeIdLevel3() == Type3.getId()) {
+				if (goods.getType3().getId() == Type3.getId()) {
 					type3 = Type3.getTypeName();
 				}
 			}

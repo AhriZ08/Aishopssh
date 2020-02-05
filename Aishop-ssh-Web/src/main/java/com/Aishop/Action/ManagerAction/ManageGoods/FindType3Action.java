@@ -41,8 +41,10 @@ public class FindType3Action extends ActionSupport implements ServletRequestAwar
         }
         str = str.substring(0, str.length() - 1);
         str += "]";
+        System.out.println(str);
         response.getWriter().write(str);
-
+        response.getWriter().flush();
+        response.getWriter().close();
         return "success";
     }
 

@@ -116,7 +116,7 @@ layui.use('element', function(){
 function getspdata(idx){
 	$.ajax({
 		url: "${pageContext.request.contextPath}/IndexShopList.action?idx=" + idx,
-		type: "get",
+		type: "post",
 		data: {"curr" : currpage},
 		async: false,
 		cache: false,
@@ -137,10 +137,10 @@ function getspdata(idx){
 						}
 						st += "<div class='layui-col-lg4'>";
 						st += "<div class='OneShop NoMagPad'>";
-						st += "<img src='${pageContext.request.contextPath}" + item.url + "' onclick='detail(" + item.id + ")' style='cursor:pointer;'/>";
+						st += "<img src='${pageContext.request.contextPath}" + item.picture + "' onclick='detail(" + item.id + ")' style='cursor:pointer;'/>";
 						st += "<div class='OneShop-bottom NoMagPad'>";
-						st += "<span>" + item.mingcheng + "</span><br/>"
-						st += "<span style='color:#B5B5B5'>$" + item.huiyuanjia + "</span>";
+						st += "<span>" + item.name + "</span><br/>"
+						st += "<span style='color:#B5B5B5'>$" + item.memberPrice + "</span>";
 						st += "</div>";
 						st += "<div class='OneShop-bottom-icon'><i class='layui-icon layui-icon-cart-simple' style='font-size:30px;' onclick='spcartadd(" + item.id + ")'></i></div>";
 						st += "<div class='OneShop-bottom-icon2'><i class='layui-icon layui-icon-about' style='font-size:30px;' onclick='detail(" + item.id + ")' class='imgpointer'></i></div>";
@@ -162,14 +162,10 @@ function getspdata(idx){
  			$(".OneShop-bottom-icon").hide();
  			$(".OneShop-bottom-icon2").hide();
 			$(".OneShop").hover(function(){
-/*					$(this).find(".OneShop-bottom-icon").stop().slideToggle();
-					$(this).find(".OneShop-bottom-icon2").stop().slideToggle();*/
 					$(this).find(".OneShop-bottom").removeClass("layui-anim-fadein").addClass("layui-anim layui-anim-fadeout");
 				$(this).find(".OneShop-bottom-icon").removeClass("layui-anim-fadeout").stop().addClass("layui-anim layui-anim-fadein").show();
 				$(this).find(".OneShop-bottom-icon2").removeClass("layui-anim-fadeout").addClass("layui-anim layui-anim-fadein").show();
 				},function(){
-/* 					$(this).find(".OneShop-bottom-icon").stop().slideToggle();
-					$(this).find(".OneShop-bottom-icon2").stop().slideToggle();*/
 					$(this).find(".OneShop-bottom").removeClass("layui-anim-fadeout").stop().addClass("layui-anim layui-anim-fadein").show();
 					$(this).find(".OneShop-bottom-icon").removeClass("layui-anim-fadein").addClass("layui-anim layui-anim-fadeout");
 					$(this).find(".OneShop-bottom-icon2").removeClass("layui-anim-fadein").addClass("layui-anim layui-anim-fadeout");
@@ -208,40 +204,40 @@ function ToCartList(){
 	if(uid == ""){
 		layer.alert("请先登录！", {icon: 7});
 	}else{
-		window.location.href="${pageContext.request.contextPath}/cartlistAction";
+		window.location.href="${pageContext.request.contextPath}/CartlistAction.action";
 	}
 }
 function LoginName(){
 	var uid = "${sessionScope.id}";
 	var stitle = "";
 	var sul = "";
-	$(".Tophead-title").html("");
-	$.ajax({
-		url:"${pageContext.request.contextPath}/GetUserNameById?id=" + uid,
-		cache:false,
-		async:false,
-		dataType:"text",
-		type:"post",
-		success:function(rs){
-			if(rs != "-1"){
+	if(uid == ""){
+		stitle += '欢迎来到爱购物！<a href="${pageContext.request.contextPath}/index.jsp">请登录</a>';
+		$(".Tophead-title").html(stitle);
+	}else{
+		$(".Tophead-title").html("");
+		$.ajax({
+			url:"${pageContext.request.contextPath}/GetUserNameById.action?id=" + uid,
+			cache:false,
+			async:false,
+			dataType:"text",
+			type:"post",
+			success:function(rs){
 				stitle += '欢迎来到爱购物！   ' + rs;
 				$(".Tophead-title").html(stitle);
 				sul = $(".Tophead-ul-op").html();
 				sul += '<li><a onclick="ToCartList()" style="cursor:pointer">购物车</a></li>';
 				sul += '<li><a href="${pageContext.request.contextPath}/index2.jsp">个人中心</a></li>';
 				$(".Tophead-ul-op").html(sul);
-			}else{
-				stitle += '欢迎来到爱购物！<a href="${pageContext.request.contextPath}/index.jsp">请登录</a>';
-				$(".Tophead-title").html(stitle);
 			}
-		}
-	});
+		});
+	}
 }
 //高级搜索功能
 function highsearch(){
 	var data = $("#highform").serialize();
 	$.ajax({
-		url: "${pageContext.request.contextPath}/GetSearchRs?flag=2",
+		url: "${pageContext.request.contextPath}/GetHighSearchRs.action",
 		data: data,
 		type: "post",
 		cache: false,
@@ -257,28 +253,32 @@ function highsearch(){
 }
 //添加至购物车功能
 function spcartadd(id){
-	$.ajax({
-		url: "${pageContext.request.contextPath}/SpCartAdd?id="+id,
-		cache:false,
-		dataType:"text",
-		success:function(data){
-			if(data == "NoUser") {
-				layer.alert("请先登录！", {icon: 7});
-			}else if(data == "success"){
-				layer.msg("添加成功！");
-			}else if(data == "failed") {
-				layer.msg("添加购物车失败！");
-			}else if(data == "NoAdd") {
-				layer.msg("请勿重复添加购物车！");
+	var uid = "${sessionScope.id}";
+	if(uid == ""){
+		layer.alert("请先登录！", {icon: 7});
+	}else{
+		$.ajax({
+			url: "${pageContext.request.contextPath}/SpCartAdd.action?id="+id,
+			data:{"uid":uid},
+			cache:false,
+			dataType:"text",
+			success:function(data){
+				if(data == "success"){
+					layer.msg("添加成功！");
+				}else if(data == "failed") {
+					layer.msg("添加购物车失败！");
+				}else if(data == "NoAdd") {
+					layer.msg("请勿重复添加购物车！");
+				}
 			}
-		}
-	})
+		})
+	}
 }
 //获取广告信息
 function InitAdv(){
 	$.ajax({
-		url: "${pageContext.request.contextPath}/GetAdvPic",
-		type: "get",
+		url: "${pageContext.request.contextPath}/GetAdvPic.action",
+		type: "post",
 		cache:false,
 		dataType: "json",
 		success:function(obj){
@@ -295,7 +295,7 @@ function InitAdv(){
 	})
 }
 function detail(id){
-	var url = "GetOneShop?id=" + id;
+	var url = "GetOneShop.action?id=" + id;
 	window.open(url);
 }
 var fl = 0;
@@ -347,13 +347,14 @@ $(function(){
 			      scrollbar: false
 			});
 	});
+	//普通搜索
 	$("#icon-search").click(function(){
 		var data = $("#input-search").val();
 		if(data == null || data == ""){
 			layer.msg('请输入搜索信息！', {icon:0});
 		}else{
 			$.ajax({
-				url: "${pageContext.request.contextPath}/GetSearchRs?flag=1",
+				url: "${pageContext.request.contextPath}/GetPubSearchRs.action",
 				data:{"data":data},
 				type:"post",
 				cache: false,
@@ -442,13 +443,13 @@ $(function(){
 		<div class="layui-form-item">
 			<label class="layui-form-label">商品名称：</label>
 			<div class="layui-input-block">
-				<input type="text" name="shopname" required lay-verify="required" placeholder="请输入商品名称" autocomplete="off" class="layui-input"/>
+				<input type="text" name="shopName" required lay-verify="required" placeholder="请输入商品名称" autocomplete="off" class="layui-input"/>
 			</div>
 		</div>
 		
 		<div class="layui-form-item">	
 			<div class="layui-input-block">
-				<input type="checkbox" name="shopdimsh" title="模糊查找" lay-skin="primary" value="0" checked>
+				<input type="checkbox" name="shopDim" title="模糊查找" lay-skin="primary" value="0" checked>
 			</div>
 		</div>
 		
@@ -456,11 +457,11 @@ $(function(){
 			<div class="layui-inline">
 				<label class="layui-form-label">会员价格：</label>		
 				<div class="layui-input-inline" style="width: 80px;">
-					<input type="text" name="price_min" placeholder="¥"  autocomplete="off" class="layui-input"/>
+					<input type="text" name="priceMin" placeholder="¥"  autocomplete="off" class="layui-input"/>
 				</div>
 				<div class="layui-form-mid">-</div>
 				<div class="layui-input-inline" style="width: 80px;">
-					<input type="text" name="price_max" placeholder="¥" autocomplete="off" class="layui-input">
+					<input type="text" name="priceMax" placeholder="¥" autocomplete="off" class="layui-input">
 				</div>
 			</div>
 		</div>
@@ -468,7 +469,7 @@ $(function(){
 		<div class="layui-form-item">
 			<label class="layui-form-label">商品类别：</label>		
 			<div class="layui-input-block">
-				<select name="shoptype" lay-verify="required" style="max-height:200px;">
+				<select name="shopType" lay-verify="required" style="max-height:200px;">
 					<option value="0" selected>服装内衣</option>
         			<option value="1">服装男装</option>
         			<option value="2">服装女装</option>

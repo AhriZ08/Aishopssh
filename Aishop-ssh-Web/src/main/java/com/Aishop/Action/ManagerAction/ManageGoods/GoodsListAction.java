@@ -24,6 +24,9 @@ public class GoodsListAction extends ActionSupport implements ServletResponseAwa
 
     public String GetAllGoods() {
        request.getSession().setAttribute("goods", manageService.GetAllGoods());
+       request.getSession().setAttribute("type1", manageService.GetAllType1());
+       request.getSession().setAttribute("type2", manageService.GetAllType2());
+       request.getSession().setAttribute("type3", manageService.GetAllType3());
        return "success";
     }
 

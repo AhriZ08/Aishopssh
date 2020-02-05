@@ -1,22 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import="java.util.*" %>
-<%@ page import="com.Aishopssh.Dao.ManagerDao.ManageGoodsDao" %>
+    <%@ page import="com.Aishopssh.Dao.ManagerDao.ManageGoodsDao" %>
 <%@ page import="com.Aishopssh.Entites.Type1" %>
-<%@ page import="com.Aishopssh.Entites.Type2" %>
-<%@ page import="com.Aishopssh.Entites.Type3" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
 </head>
 <%
 	String path = request.getContextPath();
-	ManageGoodsDao beanDB = new ManageGoodsDao();
-	List<Type1> type1list = beanDB.GetAllType1();
-	List<Type2> type2list = beanDB.GetAllType2();
-	List<Type3> type3list = beanDB.GetAllType3();
+	List<Type1> type1list = (List<Type1>) session.getAttribute("type1");
+	session.removeAttribute("type1");
 %>
 <link rel="stylesheet" type="text/css" href="<%=path %>/css/Manager.css">
 <script type="text/javascript" src="<%=path %>/js/datacheck.js"></script>
@@ -41,7 +37,7 @@
 					$("#Type2").html("");
 					ss += '<option value="" selected>请选择一个类别</option>';
 					$.each(data, function(i, list){
-						ss += '<option value="' + list.id + '">' + list.typename + '</option>';
+						ss += '<option value="' + list.id + '">' + list.typeName + '</option>';
 					});
 				$("#Type2").html(ss);
 				layui.form.render();
@@ -59,7 +55,7 @@
 					$("#Type3").html("");
 					ss += '<option value="" selected>请选择一个类别</option>';
 					$.each(data, function(i, list){
-						ss += '<option value="' + list.id + '">' + list.typename + '</option>';
+						ss += '<option value="' + list.id + '">' + list.typeName + '</option>';
 					});
 				$("#Type3").html(ss);
 				layui.form.render();
@@ -85,6 +81,7 @@
 				if (res.code == 0){
 					var filename = res.filename;
 					filename = "/images/" + filename;
+					console.log(filename);
 					$("#tupian").attr("value", filename);
 				}
 		    }

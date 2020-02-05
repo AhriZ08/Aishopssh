@@ -26,7 +26,12 @@ public class GoodsGetAction extends ActionSupport implements ServletResponseAwar
 
     public String GetGoods() {
         int id = Integer.parseInt(request.getParameter("id"));
-        request.getSession().setAttribute("good", manageService.GetGood(id));
+        Goods goods = manageService.GetGood(id).get(0);
+        request.getSession().setAttribute("good", goods);
+        request.getSession().setAttribute("type1", manageService.GetAllType1());
+        request.getSession().setAttribute("Type1", manageService.GetType1(goods.getType1().getId()));
+        request.getSession().setAttribute("Type2", manageService.GetType2(goods.getType2().getId()));
+        request.getSession().setAttribute("Type3", manageService.GetType3(goods.getType3().getId()));
         return "success";
     }
 

@@ -29,7 +29,7 @@ public class LeaveWordDao extends HibernateDaoSupport implements LeaveWordImp {
     //根据用户ID获得留言信息
     public List<Leaveword> GetAllLeaveWordByUid(int id) {
         return (List<Leaveword>)getHibernateTemplate()
-                        .find("from com.Aishopssh.Entites.Leaveword where tbUserByUserId.id = ?",id);
+                        .find("from com.Aishopssh.Entites.Leaveword where tbUserByUserId.id = "+id);
     }
 
     @Override
@@ -44,5 +44,21 @@ public class LeaveWordDao extends HibernateDaoSupport implements LeaveWordImp {
     //根据留言ID获取回复信息
     public AdminReply getReplyById(int id) {
         return getHibernateTemplate().get(AdminReply.class,id);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    //根据留言信息添加留言
+    public void insert(Leaveword leaveword){
+        this.getHibernateTemplate().save(leaveword);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    //取最大的id
+    public int getMaxid(){
+        Object id;
+        id = getHibernateTemplate().find("select max(id) from com.Aishopssh.Entites.Leaveword").get(0);
+        return (int)id;
     }
 }

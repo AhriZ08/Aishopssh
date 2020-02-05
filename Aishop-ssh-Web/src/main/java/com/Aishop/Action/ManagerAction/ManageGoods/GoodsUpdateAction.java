@@ -35,7 +35,6 @@ public class GoodsUpdateAction extends ActionSupport implements ServletResponseA
         goods.setAddtime(request.getParameter("addtime"));
         goods.setMarketPirce(request.getParameter("shichangjia"));
         goods.setMemberPrice(request.getParameter("huiyuanjia"));
-
         Type1 type1 = new Type1();
         type1.setId(MyTools.strToint(request.getParameter("type1")));
         goods.setType1(type1);
@@ -45,7 +44,6 @@ public class GoodsUpdateAction extends ActionSupport implements ServletResponseA
         Type3 type3 = new Type3();
         type3.setId(MyTools.strToint(request.getParameter("type3")));
         goods.setType3(type3);
-
         goods.setLevel(request.getParameter("dengji"));
         goods.setBrand(request.getParameter("pinpai"));
         goods.setModel(request.getParameter("xinghao"));
@@ -59,10 +57,12 @@ public class GoodsUpdateAction extends ActionSupport implements ServletResponseA
         return "success";
     }
 
+    @Override
     public void setServletRequest(HttpServletRequest httpServletRequest) {
         this.request = httpServletRequest;
     }
 
+    @Override
     public void setServletResponse(HttpServletResponse httpServletResponse) {
         this.response = httpServletResponse;
     }

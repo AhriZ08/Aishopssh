@@ -4,12 +4,12 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.Aishopssh.Entites.PwdRest" table="tb_pwd_rest" schema="e_shopwebsite">
+    <class name="com.Aishopssh.Entites.PwdRest" table="tb_pwd_reset" schema="e_shopwebsitessh">
         <id name="id" column="id">
             <generator class="native"/>
         </id>
         <property name="isAccepted" column="Is_Accepted"/>
-        <many-to-one name="tbUserByUserId" class="com.Aishopssh.Entites.User">
+        <many-to-one name="tbUserByUserId" class="com.Aishopssh.Entites.User" lazy="false">
             <column name="UserID"/>
         </many-to-one>
     </class>

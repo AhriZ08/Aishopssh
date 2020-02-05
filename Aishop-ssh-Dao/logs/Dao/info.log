@@ -144,3 +144,349 @@
 [23:17:16:511] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
 [23:17:17:339] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 [23:17:18:441] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[23:39:19:104] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[23:39:19:233] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[23:39:19:235] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[23:39:19:375] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[23:39:20:203] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[23:50:52:932] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[23:50:53:150] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[23:50:53:151] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[23:50:53:312] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[23:50:54:281] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[23:59:32:690] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[23:59:32:841] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[23:59:32:842] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[23:59:32:979] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[23:59:33:842] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[23:59:34:924] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1863) - {dataSource-1} closed
+[00:22:31:055] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[00:22:31:058] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[00:22:31:309] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[00:22:32:286] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[00:22:33:452] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[01:10:52:219] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[01:10:52:353] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[01:10:52:354] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[01:10:52:519] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[01:10:53:461] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[01:10:54:553] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[01:14:50:119] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[01:14:50:255] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[01:14:50:257] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[01:14:50:403] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[01:14:51:406] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[01:14:52:520] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[01:16:24:577] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[01:16:24:747] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[01:16:24:748] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[01:16:24:903] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[01:16:25:869] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[01:16:26:919] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[01:17:09:996] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[01:17:10:110] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[01:17:10:112] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[01:17:10:251] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[01:17:11:095] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[01:17:12:189] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[01:19:44:158] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[01:19:44:304] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[01:19:44:306] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[01:19:44:459] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[01:19:45:374] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[01:19:46:465] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[01:20:11:412] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[01:20:11:554] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[01:20:11:556] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[01:20:11:701] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[01:20:12:610] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[01:20:13:683] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[08:08:50:150] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[08:08:50:525] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[08:08:50:525] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[08:08:50:994] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[08:08:52:025] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[08:08:53:743] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[08:44:21:923] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[08:44:22:070] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[08:44:22:071] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[08:44:22:225] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[08:44:23:098] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[08:44:52:348] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[08:44:52:477] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[08:44:52:478] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[08:44:52:631] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[08:44:53:677] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[08:44:54:934] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[08:46:27:138] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[08:46:27:271] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[08:46:27:272] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[08:46:27:405] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[08:46:28:386] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[08:46:29:488] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[08:58:30:149] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[08:58:30:271] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[08:58:30:273] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[08:58:30:407] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[08:58:31:200] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[08:58:32:406] [WARN] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:129) - SQL Error: 1048, SQLState: 23000
+[08:58:32:407] [ERROR] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:131) - Column 'GoodsAddTime' cannot be null
+[08:58:32:435] [ERROR] - org.hibernate.AssertionFailure.<init>(AssertionFailure.java:31) - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)
+[08:58:32:438] [ERROR] - org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure(ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)]
+[09:00:06:070] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:00:06:200] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:00:06:201] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:00:06:349] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:00:07:146] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:00:08:245] [WARN] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:129) - SQL Error: 1048, SQLState: 23000
+[09:00:08:246] [ERROR] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:131) - Column 'GoodsAddTime' cannot be null
+[09:00:08:250] [ERROR] - org.hibernate.AssertionFailure.<init>(AssertionFailure.java:31) - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)
+[09:00:08:251] [ERROR] - org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure(ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)]
+[09:05:10:220] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:05:10:358] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:05:10:360] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:05:10:504] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:05:11:387] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:05:12:458] [WARN] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:129) - SQL Error: 1048, SQLState: 23000
+[09:05:12:459] [ERROR] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:131) - Column 'GoodsAddTime' cannot be null
+[09:05:12:463] [ERROR] - org.hibernate.AssertionFailure.<init>(AssertionFailure.java:31) - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)
+[09:05:12:463] [ERROR] - org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure(ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)]
+[09:06:26:851] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:06:27:013] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:06:27:017] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:06:27:168] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:06:28:063] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:06:29:117] [WARN] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:129) - SQL Error: 1048, SQLState: 23000
+[09:06:29:118] [ERROR] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:131) - Column 'GoodsAddTime' cannot be null
+[09:06:29:121] [ERROR] - org.hibernate.AssertionFailure.<init>(AssertionFailure.java:31) - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)
+[09:06:29:122] [ERROR] - org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure(ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)]
+[09:07:10:000] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:07:10:152] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:07:10:154] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:07:10:286] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:07:11:096] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:07:12:181] [WARN] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:129) - SQL Error: 1048, SQLState: 23000
+[09:07:12:182] [ERROR] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:131) - Column 'GoodsAddTime' cannot be null
+[09:07:12:186] [ERROR] - org.hibernate.AssertionFailure.<init>(AssertionFailure.java:31) - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)
+[09:07:12:186] [ERROR] - org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure(ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)]
+[09:07:40:685] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:07:40:846] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:07:40:848] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:07:40:993] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:07:41:818] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:07:42:891] [WARN] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:129) - SQL Error: 1048, SQLState: 23000
+[09:07:42:891] [ERROR] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:131) - Column 'GoodsAddTime' cannot be null
+[09:07:42:895] [ERROR] - org.hibernate.AssertionFailure.<init>(AssertionFailure.java:31) - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)
+[09:07:42:896] [ERROR] - org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure(ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)]
+[09:14:33:970] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:14:34:129] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:14:34:131] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:14:34:305] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:14:35:231] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:14:36:315] [WARN] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:129) - SQL Error: 1048, SQLState: 23000
+[09:14:36:316] [ERROR] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:131) - Column 'GoodsAddTime' cannot be null
+[09:14:36:323] [ERROR] - org.hibernate.AssertionFailure.<init>(AssertionFailure.java:31) - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)
+[09:14:36:324] [ERROR] - org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure(ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)]
+[09:14:56:708] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:14:56:837] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:14:56:840] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:14:56:974] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:14:57:773] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:14:58:876] [WARN] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:129) - SQL Error: 1048, SQLState: 23000
+[09:14:58:876] [ERROR] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:131) - Column 'GoodsAddTime' cannot be null
+[09:14:58:883] [ERROR] - org.hibernate.AssertionFailure.<init>(AssertionFailure.java:31) - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)
+[09:14:58:884] [ERROR] - org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure(ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)]
+[09:15:39:697] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:15:39:828] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:15:39:829] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:15:39:962] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:15:40:817] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:15:41:889] [WARN] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:129) - SQL Error: 1048, SQLState: 23000
+[09:15:41:890] [ERROR] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:131) - Column 'GoodsAddTime' cannot be null
+[09:15:41:899] [ERROR] - org.hibernate.AssertionFailure.<init>(AssertionFailure.java:31) - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)
+[09:15:41:900] [ERROR] - org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure(ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [null id in com.Aishopssh.Entites.Cartlist entry (don't flush the Session after an exception occurs)]
+[09:16:42:475] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:16:42:599] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:16:42:601] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:16:42:744] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:16:43:590] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:32:08:481] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:32:08:592] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:32:08:594] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:32:08:725] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:32:09:625] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:32:10:666] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[09:33:20:475] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:33:20:620] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:33:20:621] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:33:20:751] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:33:21:574] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:33:22:602] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[09:34:15:518] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:34:15:703] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:34:15:705] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:34:15:847] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:34:16:669] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:34:17:691] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[09:34:56:656] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:34:56:803] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:34:56:805] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:34:56:936] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:34:57:761] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:34:58:845] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[09:35:25:675] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:35:25:803] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:35:25:805] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:35:25:949] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:35:26:781] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:35:27:850] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[09:40:15:371] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:40:15:528] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:40:15:530] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:40:15:665] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:40:16:468] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:40:17:490] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[09:44:14:215] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[09:44:14:356] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[09:44:14:358] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[09:44:14:504] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[09:44:15:465] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[09:44:16:532] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[10:14:35:145] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[10:14:35:289] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[10:14:35:291] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[10:14:35:424] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[10:14:36:219] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[10:14:37:472] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[10:15:03:248] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[10:15:03:391] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[10:15:03:393] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[10:15:03:525] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[10:15:04:366] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[10:15:05:407] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[10:52:00:563] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[10:52:00:712] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[10:52:00:714] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[10:52:00:881] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[10:52:01:797] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[11:30:17:849] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[11:30:17:980] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[11:30:17:982] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[11:30:18:134] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[11:30:18:977] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:01:11:100] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[13:01:11:366] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[13:01:11:368] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[13:01:11:569] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:01:12:720] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:01:14:180] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[13:01:53:770] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[13:01:53:986] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[13:01:53:987] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[13:01:54:116] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:01:55:019] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:01:56:108] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[13:05:44:730] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[13:05:44:858] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[13:05:44:859] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[13:05:45:003] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:05:45:868] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:05:47:199] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[13:06:08:644] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[13:06:08:759] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[13:06:08:760] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[13:06:08:903] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:06:09:743] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:06:10:792] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[13:06:40:563] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[13:06:40:693] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[13:06:40:695] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[13:06:40:846] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:06:41:709] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:06:42:835] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[13:27:53:789] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[13:27:53:924] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[13:27:53:926] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[13:27:54:081] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:27:55:095] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:28:43:162] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[13:28:43:286] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[13:28:43:287] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[13:28:43:427] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:28:44:263] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:29:10:117] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[13:29:10:243] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[13:29:10:244] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[13:29:10:376] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:29:11:198] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[13:36:25:374] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[13:36:25:488] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[13:36:25:490] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[13:36:25:624] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[13:36:26:471] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[18:07:41:176] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[18:07:41:545] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[18:07:41:547] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[18:07:42:090] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[18:07:43:452] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[18:07:45:516] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[18:07:45:723] [WARN] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:129) - SQL Error: 1054, SQLState: 42S22
+[18:07:45:723] [ERROR] - org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(SqlExceptionHelper.java:131) - Unknown column 'leaveword0_.Is_Reply' in 'field list'
+[18:46:48:541] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[18:46:48:658] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[18:46:48:659] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[18:46:48:800] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[18:46:49:644] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[18:46:50:749] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[18:47:03:214] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[18:47:03:352] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[18:47:03:355] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[18:47:03:492] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[18:47:04:317] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[18:47:05:419] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[18:47:55:678] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[18:47:55:813] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[18:47:55:815] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[18:47:55:951] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[18:47:56:797] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[19:10:48:848] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[19:10:48:979] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[19:10:48:981] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[19:10:49:117] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[19:10:50:029] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[19:10:51:102] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[00:02:07:722] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[00:02:07:723] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[00:02:07:897] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[00:02:08:949] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[00:02:10:451] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[00:03:27:882] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[00:03:28:011] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[00:03:28:013] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[00:03:28:159] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[00:03:29:104] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[00:03:30:257] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[00:03:30:423] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1863) - {dataSource-1} closed
+[08:06:53:220] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[08:06:53:576] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[08:06:53:578] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[08:06:53:809] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[08:06:54:913] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[08:10:48:468] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[08:10:48:638] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[08:10:48:640] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[08:10:48:815] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[08:10:50:037] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[08:10:51:839] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[08:12:07:985] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[08:12:08:136] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[08:12:08:139] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[08:12:08:418] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[08:12:09:263] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[08:12:10:337] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+[08:12:25:872] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:947) - {dataSource-1} inited
+[08:12:26:020] [INFO] - org.hibernate.Version.logVersion(Version.java:45) - HHH000412: Hibernate Core {5.2.17.Final}
+[08:12:26:021] [INFO] - org.hibernate.cfg.Environment.<clinit>(Environment.java:213) - HHH000206: hibernate.properties not found
+[08:12:26:164] [INFO] - org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[08:12:27:011] [INFO] - org.hibernate.dialect.Dialect.<init>(Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[08:12:28:032] [INFO] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService(QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory

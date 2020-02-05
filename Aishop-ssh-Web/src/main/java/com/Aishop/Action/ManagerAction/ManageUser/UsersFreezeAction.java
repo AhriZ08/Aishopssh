@@ -26,7 +26,7 @@ public class UsersFreezeAction extends ActionSupport implements ServletResponseA
     public  String UpdateUser(){
         User user = new User();
         int id = Integer.parseInt(request.getParameter("id"));
-        user = (User)manageService.GetUser(id);
+        user = manageService.GetUser(id).get(0);
         int dongjie = user.getBlocked();
         if (dongjie == 0) {
             dongjie = 1;

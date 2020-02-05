@@ -1,3 +1,4 @@
 # Project exclude paths
 /Aishop-ssh-Dao/target/
 /Aishop-ssh-Web/target/
+/Aishop-ssh-Service/target/

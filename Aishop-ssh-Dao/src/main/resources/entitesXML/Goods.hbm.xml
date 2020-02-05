@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.Aishopssh.Entites.Goods" table="tb_goods" schema="e_shopwebsite">
+    <class name="com.Aishopssh.Entites.Goods" table="tb_goods" schema="e_shopwebsitessh">
         <id name="id" column="id">
             <generator class="native"/>
         </id>
@@ -22,19 +22,8 @@
         <property name="brand" column="Brand"/>
         <property name="isSpecialPrice" column="Is_SpecialPrice"/>
 
-        <set name="tbCartlistsById" inverse="true">
-            <key>
-                <column name="GoodsID"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.Aishopssh.Entites.Cartlist"/>
-        </set>
-
-        <set name="tbCommentsById" inverse="true" table="tb_comments">
-            <key column="GoodsID"/>
-            <one-to-many not-found="ignore" class="com.Aishopssh.Entites.Comments"/>
-        </set>
-        <many-to-one name="type1" column="TypeID_Level_1" class="com.Aishopssh.Entites.Type1"/>
-        <many-to-one name="type2" column="TypeID_Level_2" class="com.Aishopssh.Entites.Type2"/>
-        <many-to-one name="type3" column="TypeID_Level_3" class="com.Aishopssh.Entites.Type3"/>
+        <many-to-one name="type1" column="TypeID_Level_1" class="com.Aishopssh.Entites.Type1" lazy="false"/>
+        <many-to-one name="type2" column="TypeID_Level_2" class="com.Aishopssh.Entites.Type2" lazy="false"/>
+        <many-to-one name="type3" column="TypeID_Level_3" class="com.Aishopssh.Entites.Type3" lazy="false"/>
     </class>
 </hibernate-mapping>

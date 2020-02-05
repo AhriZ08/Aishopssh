@@ -18,12 +18,19 @@ public class ManagerSelfGetAction extends ActionSupport implements ServletRespon
     private HttpServletRequest request;
     private HttpServletResponse response;
 
+    private Integer id;
+    public Integer getId() {
+        return id;
+    }
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     @Autowired
     @Qualifier("ManageSelfService")
     private ManageSelfServiceImp manageService;
 
-    public String GetManager(){
-        int id = Integer.parseInt(request.getParameter("id"));
+    public String GetManager() {
         request.getSession().setAttribute("mgr", manageService.GetManager(id));
         return "success";
     }

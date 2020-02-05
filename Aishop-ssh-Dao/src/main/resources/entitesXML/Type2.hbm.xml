@@ -4,12 +4,12 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.Aishopssh.Entites.Type2" table="tb_type_2" schema="e_shopwebsite">
+    <class name="com.Aishopssh.Entites.Type2" table="tb_type_2" schema="e_shopwebsitessh">
         <id name="id" column="id">
             <generator class="native"/>
         </id>
         <property name="typeName" column="TypeName"/>
-        <many-to-one name="tbType1ByTypeIdLevel1" class="com.Aishopssh.Entites.Type1">
+        <many-to-one name="tbType1ByTypeIdLevel1" class="com.Aishopssh.Entites.Type1" lazy="false">
             <column name="TypeID_Level_1"/>
         </many-to-one>
         <set name="tbType3sById" inverse="true">

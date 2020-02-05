@@ -20,6 +20,13 @@ public class ManagerSelfUpdateAction extends ActionSupport implements ServletRes
     private HttpServletRequest request;
     private HttpServletResponse response;
 
+    private Integer id;
+    public Integer getAid() {
+        return id;
+    }
+    public void setAid(Integer id) {
+        this.id = id;
+    }
     @Autowired
     @Qualifier("ManageSelfService")
     private ManageSelfServiceImp manageService;
@@ -32,8 +39,7 @@ public class ManagerSelfUpdateAction extends ActionSupport implements ServletRes
         manager.setName(request.getParameter("name"));
         manager.setPwd(request.getParameter("pwd"));
         manageService.UpdateManager(manager);
-        request.getSession().setAttribute("id", manager.getId());
-
+        this.id = manager.getId();
         return "success";
     }
 

@@ -53,6 +53,7 @@ public class UploadAction extends ActionSupport implements ServletResponseAware,
             obj.put("code", 0);
             obj.put("filename", saveName);
             response.getWriter().write(obj.toString());
+            response.getWriter().flush();
             response.getWriter().close();
         } catch (FileUploadException e) {
             // TODO Auto-generated catch block

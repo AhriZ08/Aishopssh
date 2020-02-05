@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="Userlogin" extends="struts-default" namespace="/">
+        <action name="indexaction" class="com.Aishop.Action.UserAction.UserLogin.indexaction" method="indexaction">
+            <result  name="error" type="redirect">/index.jsp?username=${username}&amp;loginflag=${loginflag}</result>
+            <result  name="success" type="redirect">/index2.jsp</result>
+        </action>
+    </package>
+</struts>

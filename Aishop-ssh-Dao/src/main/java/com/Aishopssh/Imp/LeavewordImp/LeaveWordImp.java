@@ -30,4 +30,16 @@ public interface LeaveWordImp {
      */
     public AdminReply getReplyById(int id);
 
+    /**
+     * 根据留言信息添加留言
+     * @param leaveword 留言信息
+     *
+     */
+    public void insert(Leaveword leaveword);
+    /**
+     * 取最大id
+     *
+     *
+     */
+    public int getMaxid();
 }

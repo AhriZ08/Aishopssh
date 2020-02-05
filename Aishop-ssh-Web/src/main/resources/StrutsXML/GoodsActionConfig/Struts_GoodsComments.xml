@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="commentsLook" namespace="/" extends="json-default">
+        <action name="GetAllShopCom" class="com.Aishop.Action.GoodsAction.GoodsComments.getAllComments" method="execute">
+            <result name="success" type="json">
+                <param name="root">commentsList</param>
+            </result>
+        </action>
+    </package>
+    <package name="addComments" namespace="/" extends="struts-default">
+        <action name="AddComment" class="com.Aishop.Action.GoodsAction.GoodsComments.addComments" method="execute">
+            <result name="success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">text/html</param>
+            </result>
+        </action>
+    </package>
+</struts>

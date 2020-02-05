@@ -4,17 +4,17 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.Aishopssh.Entites.Cartlist" table="tb_cartlist" schema="e_shopwebsite">
+    <class name="com.Aishopssh.Entites.Cartlist" table="tb_cartlist" schema="e_shopwebsitessh">
         <id name="id" column="id">
             <generator class="native"/>
         </id>
         <property name="goodsNum" column="GoodsNum"/>
         <property name="goodsAddTime" column="GoodsAddTime"/>
-        <property name="orderNum" column="OrderNum"/>
-        <many-to-one name="tbGoodsByGoodsId" class="com.Aishopssh.Entites.Goods">
+        <property name="orderNum" column="OrderNum" not-null="false"/>
+        <many-to-one name="tbGoodsByGoodsId" class="com.Aishopssh.Entites.Goods" lazy="false">
             <column name="GoodsID"/>
         </many-to-one>
-        <many-to-one name="tbUserByUserId" class="com.Aishopssh.Entites.User">
+        <many-to-one name="tbUserByUserId" class="com.Aishopssh.Entites.User" lazy="false">
             <column name="UserID"/>
         </many-to-one>
     </class>

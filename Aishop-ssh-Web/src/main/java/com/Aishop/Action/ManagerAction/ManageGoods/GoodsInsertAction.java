@@ -16,7 +16,6 @@ import org.springframework.stereotype.Controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +36,6 @@ public class GoodsInsertAction extends ActionSupport implements ServletResponseA
         goods.setAddtime(request.getParameter("addtime"));
         goods.setMarketPirce(request.getParameter("shichangjia"));
         goods.setMemberPrice(request.getParameter("huiyuanjia"));
-
         Type1 type1 = new Type1();
         type1.setId(MyTools.strToint(request.getParameter("type1")));
         goods.setType1(type1);
@@ -47,7 +45,6 @@ public class GoodsInsertAction extends ActionSupport implements ServletResponseA
         Type3 type3 = new Type3();
         type3.setId(MyTools.strToint(request.getParameter("type3")));
         goods.setType3(type3);
-
         goods.setLevel(request.getParameter("dengji"));
         goods.setBrand(request.getParameter("pinpai"));
         goods.setModel(request.getParameter("xinghao"));
@@ -55,6 +52,7 @@ public class GoodsInsertAction extends ActionSupport implements ServletResponseA
         goods.setNum(MyTools.strToint(request.getParameter("shuliang")));
         goods.setPurchaseTime(MyTools.strToint(request.getParameter("cishu")));
         goods.setPicture(request.getParameter("tupian"));
+        System.out.println(goods.getPicture());
         goods.setIntroduction(request.getParameter("jianjie"));
         manageService.InsertGoods(goods);
 

@@ -1,5 +1,6 @@
 package com.Aishopssh.Imp.WelcomePageImp;
 
+import com.Aishopssh.Entites.Advertisements;
 import com.Aishopssh.Entites.Goods;
 
 import java.util.List;
@@ -12,4 +13,12 @@ public interface WelcomePageImp {
      */
     public List<Goods> GetAllSpSimpleInfo(int idx, int currpage);
 
+    /**
+     * 获取用户名
+     * @return 用户名
+     */
+    public String getUsername(int uid);
+    public int cartListIsExist(int uid, int gid);
+    public int addToCartLst(int uid, int gid, String currDate);
+    public List<Advertisements> getAdv();
 }

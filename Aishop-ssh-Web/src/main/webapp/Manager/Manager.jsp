@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.Aishopssh.Dao.ManagerDao.ManageSelfDao" %>
-<%@ page import="com.Aishopssh.Entites.Admin" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,8 +9,6 @@
 	String path = request.getContextPath();
 	//int ManagerID = (int)session.getAttribute("AdminID");
 	int ManagerID = 1;
-	Admin manager = new Admin();
-	ManageSelfDao beanDB = new ManageSelfDao();
 %>
 <link rel="stylesheet" type="text/css" href="<%=path%>/css/Manager.css">
 <link rel="stylesheet" type="text/css" href="<%=path%>/css/animate.css">
@@ -64,13 +60,13 @@
 						<a href="javascript:;">商品管理</a>
 							<dl class="layui-nav-child">
 								<dd><a href="<%=path%>/GoodsListAction.action" target="workspace">商品信息</a></dd>
-								<dd><a href="Goods_Add.jsp" target="workspace">增加商品</a></dd>
+								<dd><a href="<%=path%>/GoodsAddAction.action" target="workspace">增加商品</a></dd>
 							</dl>
 					</li>
 					<li class="layui-nav-item">
 						<a href="javascript:;">用户管理</a>
 							<dl class="layui-nav-child">
-								<dd><a href="<%=path%>/UsersListAction.action" target="workspace">用户信息</a></dd>
+								<dd><a href="<%=path%>/UserListAction.action" target="workspace">用户信息</a></dd>
 								<dd><a href="<%=path%>/ManagerSelfGetAction.action?id=<%=ManagerID%>" target="workspace">管理员信息</a></dd>
 							</dl>
 					</li>
